@@ -9,7 +9,7 @@
 <#macro renderNavItemWithSubItems navItem>
   <li>
     <span class="opener"><a href="${navItem.url}">${navItem.label}</a></span>
-    <ul>
+    <ul> 
       <#nested>
     </ul>
   </li>
