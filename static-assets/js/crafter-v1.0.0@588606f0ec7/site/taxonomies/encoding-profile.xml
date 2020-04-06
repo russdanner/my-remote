@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<content-type>/component/taxonomy</content-type>	<display-template/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>6c11</objectGroupId>
+	<objectId>6c11071f-8a13-d71f-e80b-88ba3afeaa0f</objectId>
+	<items>	<item>	<key>project-a-clip-2</key>
+	<value>Project A Clip 2</value>
+	</item></items>
+	<file-name>encoding-profile.xml</file-name>
+	<folder-name/>
+	<internal-name>Encoding Profile</internal-name>
+	<createdDate>2018-08-08T17:45:03.248Z</createdDate>
+	<createdDate_dt>2018-08-08T17:45:03.248Z</createdDate_dt>
+	<lastModifiedDate>2018-08-08T17:45:03.248Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-08-08T17:45:03.248Z</lastModifiedDate_dt>
+</component>
