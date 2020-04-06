@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ - Copyright (C) 2007-2018 Crafter Software Corporation. All Rights Reserved.
+ -
+ - This program is licensed under the Crafter Enterprise Software License Agreement,
+ - and its use is strictly limited to operation with Crafter CMS Enterprise Edition.
+ - Unauthorized use, distribution, or modification is strictly prohibited.
+-->
+
+<!--
+    This file configures the site application context used by Crafter Engine
+
+-->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="org.springframework.context.support.PropertySourcesPlaceholderConfigurer" parent="crafter.properties"/>
+
+    <bean id="cacheService" class="org.craftercms.site.videocenter.cache.CacheService">
+        <property name="searchService" ref="crafter.searchService"/>
+    </bean>
+
+    <bean id="databaseDao" class="org.craftercms.site.videocenter.aws.DynamoDbDao">
+        <property name="accessKey" value="${aws.credentials.accessKey}"/>
+        <property name="secretKey" value="${aws.credentials.secretKey}"/>
+        <property name="region" value="${aws.credentials.region}"/>
+        <property name="idField" value="${aws.tables.fields.id}"/>
+        <property name="siteIdField" value="${aws.tables.fields.siteId}"/>
+    </bean>
+
+    <bean id='endpointService' class="org.craftercms.site.videocenter.aws.EndpointService">
+        <property name="requestKeyHeaderName" value="${aws.credentials.keyHeader.name}"/>
+        <property name="requestKeyHeaderValue" value="${override.aws.credentials.keyHeader.value:${aws.credentials.keyHeader.value}}"/>
+    </bean>
+
+    <bean id="validationService" class="org.craftercms.site.videocenter.service.ValidationService">
+        <property name="lovService" ref="lovService"/>
+    </bean>
+
+    <bean id="signedCookieService" class="org.craftercms.site.videocenter.service.SignedCookieService">
+        <property name="endpointService" ref="endpointService"/>
+        <property name="userService" ref="userService"/>
+        <property name="apiUrl" value="${override.aws.signedCookies.baseUrl:${aws.signedCookies.baseUrl}}${aws.signedCookies.apiPath}"/>
+        <property name="localAuthHeaderName" value="${headers.authorization}"/>
+        <property name="apiAuthHeaderName" value="${aws.signedCookies.authorizationHeader}"/>
+        <property name="expirationCookieName" value="${aws.signedCookies.expirationCookie}"/>
+        <property name="expirationCookieValuePath" value="${aws.signedCookies.expirationCookieValuePath}"/>
+    </bean>
+
+    <bean id="tagService" class="org.craftercms.site.videocenter.service.TagService">
+    </bean>
+
+ 	<bean id="channelService" class="org.craftercms.site.videocenter.service.ChannelService">
+        <property name="siteItemService" ref="crafter.siteItemService"/>
+        <property name="searchService" ref="crafter.searchService"/>
+        <property name="databaseDao" ref="databaseDao"/>
+        <property name="tagService" ref="tagService"/>
+        <property name="validationService" ref="validationService"/>
+        <property name="tableName" value="${override.aws.tables.channels:${aws.tables.channels}}"/>
+    </bean>
+
+    <bean id="programService" class="org.craftercms.site.videocenter.service.ProgramService">
+        <property name="databaseDao" ref="databaseDao"/>
+        <property name="channelService" ref="channelService"/>
+        <property name="validationService" ref="validationService"/>
+        <property name="requiredRole" value="${users.roles.programWrite}"/>
+        <property name="tableName" value="${override.aws.tables.programs:${aws.tables.programs}}"/>
+        <property name="noDateSentinelValue" value="${programs.noDateSentinel}"/>
+    </bean>
+
+    <bean id="episodeService" class="org.craftercms.site.videocenter.service.EpisodeService">
+        <property name="databaseDao" ref="databaseDao"/>
+        <property name="tagService" ref="tagService"/>
+        <property name="validationService" ref="validationService"/>
+        <property name="tableName" value="${override.aws.tables.programItems:${aws.tables.programItems}}"/>
+        <property name="noEpisodeTitle" value="${programs.empty.title}"/>
+        <property name="noEpisodeDescription" value="${programs.empty.description}"/>
+    </bean>
+
+    <bean id="transcriptionService" class="org.craftercms.site.videocenter.service.TranscriptionService">
+    </bean>
+
+    <bean id="clipService" class="org.craftercms.site.videocenter.service.ClipService">
+        <property name="searchService" ref="crafter.searchService"/>
+        <property name="channelService" ref="channelService"/>
+        <property name="episodeService" ref="episodeService"/>
+        <property name="transcriptionService" ref="transcriptionService"/>
+        <property name="validationService" ref="validationService"/>
+        <property name="endpointService" ref="endpointService"/>
+        <property name="databaseDao" ref="databaseDao"/>
+        <property name="cache" ref="cacheService"/>
+        <property name="apiUrl" value="${override.clips.baseApiUrl:${clips.baseApiUrl}}${clips.apiPath}"/>
+        <property name="tableName" value="${override.aws.tables.clips:${aws.tables.clips}}"/>
+        <property name="tagService" ref="tagService"/>
+        <property name="initialStatus" value="${clips.initialStatus}"/>
+        <property name="errorStatus" value="${clips.errorStatus}"/>
+        <property name="completeStatus" value="${clips.successStatus}"/>
+    </bean>
+
+    <bean id="mediaSearchService" class="org.craftercms.site.videocenter.service.MediaSearchService">
+        <property name="searchService" ref="crafter.searchService"/>
+        <property name="userService" ref="userService"/>
+        <property name="clipService" ref="clipService"/>
+        <property name="channelService" ref="channelService"/>
+        <property name="episodeService" ref="episodeService"/>
+        <property name="programService" ref="programService"/>
+        <property name="tagService" ref="tagService"/>
+        <property name="lovService" ref="lovService"/>
+    </bean>
+
+    <bean id="programGuideService" class="org.craftercms.site.videocenter.service.ProgramGuideService">
+        <property name="searchService" ref="crafter.searchService"/>
+        <property name="channelService" ref="channelService"/>
+        <property name="programService" ref="programService"/>
+        <property name="episodeService" ref="episodeService"/>
+        <property name="channelCacheDays" value="${channels.cache}"/>
+        <property name="noDateSentinelValue" value="${programs.noDateSentinel}"/>
+    </bean>
+
+    <bean id="lovService" class="org.craftercms.site.videocenter.service.LoVService">
+      <property name="searchService" ref="crafter.searchService"/>
+      <property name="taxonomyService" ref="taxonomyService"/>
+    </bean>
+
+    <bean id="taxonomyService" class="org.craftercms.site.videocenter.service.TaxonomyService">
+        <property name="siteItemService" ref="crafter.siteItemService"/>
+    </bean>
+    
+    <bean id="userService" class="org.craftercms.site.videocenter.service.UserService">
+        <property name="searchService" ref="crafter.searchService"/>
+        <property name="validationService" ref="validationService"/>
+        <property name="databaseDao" ref="databaseDao"/>
+        <property name="tableName" value="${override.aws.tables.users:${aws.tables.users}}"/>
+        <property name="anonymousId" value="${users.anonymous}"/>
+        <property name="defaultTimezone" value="${users.defaultTimezone}"/>
+    </bean>
+    
+</beans>
