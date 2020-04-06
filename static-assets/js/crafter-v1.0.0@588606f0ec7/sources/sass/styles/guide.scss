@@ -1,0 +1,242 @@
+@import "../settings";
+@import "scss-utils";
+
+$border-color: #DDDDDD;
+
+.guide-view {
+  background: #F0F0F0;
+  &__padding {
+    margin: 0 auto;
+    min-height: 100vh;
+    max-width: 1200px;
+    padding: 20px 20px 40px;
+  }
+  &__table {
+
+  }
+  &__thead {
+    height: 50px;
+    display: flex;
+    background: #fff;
+    align-items: center;
+    place-content: center center;
+    border-bottom: 1px solid $border-color;
+    &__th {
+      display: flex;
+      align-items: center;
+      width: calc(50% - 125px);
+      @include text-weight-semi-bold;
+      &.empty {
+        flex-grow: 0;
+        width: 250px;
+      }
+    }
+  }
+  &__body {
+
+  }
+  &__row {
+    display: flex;
+    background: #fff;
+    border-bottom: 1px solid $border-color;
+  }
+  &__channel {
+    $width: 250px;
+    width: $width;
+    display: flex;
+    max-width: $width;
+    min-width: $width;
+    @media (max-width: 940px) {
+      $width: 120px;
+      width: $width;
+      max-width: $width;
+      min-width: $width;
+    }
+    align-items: center;
+    border-right: 1px solid $border-color;
+    .video-center__item.item-view-mode_horizontal {
+      margin: 0;
+      height: 100%;
+      max-height: 120px;
+      .video-item {
+        box-shadow: none;
+      }
+      .video-item__meta-title {
+        font-size: 1em;
+        @include text-weight-medium;
+      }
+      .video-item__image-wrapper {
+        padding: 5px 0;
+        @media (max-width: 940px) {
+          display: none;
+        }
+      }
+      .video-item__meta {
+        padding: 5px;
+      }
+    }
+  }
+}
+
+.guide-date-nav {
+  width: 100%;
+  display: flex;
+  place-content: center space-between;
+  .react-datepicker-wrapper {
+    margin: 0 10px;
+  }
+  &__left,
+  &__middle,
+  &__right {
+    display: flex;
+    place-content: center center;
+  }
+  &__middle {
+    flex-grow: 1;
+  }
+  &__right,
+  &__left {
+    flex-basis: 20%;
+    color: $color-muted;
+    .clock-component {
+      font-size: 1em;
+      line-height: 1em;
+    }
+    .app-icon {
+      font-size: 1em;
+      margin-right: 10px;
+      align-items: center;
+      display: inline-flex;
+    }
+  }
+  &__date-computing {
+    height: 35px;
+    width: 150px;
+    display: flex;
+    margin: 0 10px;
+    padding: 0 10px;
+    border-radius: 2px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.episode-list {
+  width: 100%;
+  &-wrapper {
+    flex-grow: 1;
+  }
+  &__see-all {
+    width: 100%;
+    display: block;
+    padding: 5px 0;
+    text-align: center;
+    text-decoration: none;
+  }
+  &__no-data {
+    flex-grow: 1;
+    display: flex;
+    padding: 15px 0;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.episode-list-item {
+
+  &.is-live &__name {
+    @include text-weight-medium;
+  }
+  &.is-saved {
+
+  }
+  &.expanded {
+    background: #F5F5F5;
+  }
+  &.is-future {
+
+  }
+  &:not(:last-child) {
+    border-bottom: 1px solid $gray-main;
+  }
+
+  .live-indicator,
+  .play-indicator,
+  .saved-indicator {
+    opacity: .4;
+  }
+  .live-indicator {
+    color: #4caf50;
+  }
+
+  &__time,
+  &__info,
+  &__actions {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    place-content: center;
+  }
+
+  &__info {
+    height: 50px;
+  }
+
+  &__time,
+  &__details__frequency {
+    width: 55px;
+    font-size: .9em;
+    color: $color-muted;
+    padding: 0 10px 0 5px;
+    flex-direction: column;
+    border-right: 1px solid $gray-main;
+  }
+
+  &__name {
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    padding: 0 10px;
+    color: $text-color;
+    align-items: center;
+    white-space: nowrap;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    place-content: center space-between;
+    &:not(:hover) {
+      .app-icon {
+        visibility: hidden;
+      }
+      .live-indicator {
+        visibility: visible;
+      }
+    }
+    &:hover {
+      .live-indicator {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__actions {
+    border-left: 1px solid $gray-main;
+  }
+
+  &__details {
+    display: flex;
+    font-size: .9em;
+    color: $color-muted;
+  }
+
+  &__details__frequency {
+
+  }
+
+  &__details__meta {
+    padding: 0 10px;
+    p {
+      margin: 0 0 10px;
+    }
+  }
+
+}
