@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<content-type>/component/channel</content-type>	<display-template/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>bd67</objectGroupId>
+	<objectId>bd67de5d-eadb-fa9a-e134-fb0db875487c</objectId>
+	<file-name>bd67de5d-eadb-fa9a-e134-fb0db875487c.xml</file-name>
+	<internal-name>Realitatea TV</internal-name>
+	<title>Realitatea TV</title>
+	<bitrate>629000</bitrate>
+	<lowBitrate>200000</lowBitrate>
+	<url>https://4l9z9a9mab.execute-api.us-east-2.amazonaws.com/api/RealitateaTV</url>
+	<streamType>hls</streamType>
+	<encodingProfile>project-a-clip-2</encodingProfile>
+	<language_s>ron</language_s>
+	<country_s>ro</country_s>
+	<audioOnly>false</audioOnly>
+	<offline>false</offline>
+	<hidden>false</hidden>
+	<thumbnail>/static-assets/images/channels/bd67de5d-eadb-fa9a-e134-fb0db875487c/Realitatea_TV.png</thumbnail>
+	<description>&lt;p&gt;Realitatea TV (meaning "The Reality TV") is a Romanian news television network. The channel is distributed by many cable operators in Romania and Moldova. Its main owner is Romanian businessman Elan Schwartzenberg. Although it began broadcasting in 2001 as a general-profile television, Realitatea TV soon became the first ever 24-hour Romanian news television (2002).&lt;/p&gt;</description>
+	<createdDate>2018-09-14T16:14:15.332Z</createdDate>
+	<createdDate_dt>2018-09-14T16:14:15.332Z</createdDate_dt>
+	<lastModifiedDate>2018-09-14T16:14:15.332Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-09-14T16:14:15.332Z</lastModifiedDate_dt>
+</component>
