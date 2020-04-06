@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<content-type>/component/channel</content-type>	<display-template/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>c968</objectGroupId>
+	<objectId>c9689ca8-14b1-d4b7-17b6-df2271d3d07d</objectId>
+	<file-name>c9689ca8-14b1-d4b7-17b6-df2271d3d07d.xml</file-name>
+	<internal-name> Radio Havana Cuba</internal-name>
+	<title> Radio Havana Cuba</title>
+	<bitrate>212000</bitrate>
+	<lowBitrate>200000</lowBitrate>
+	<url>https://4l9z9a9mab.execute-api.us-east-2.amazonaws.com/api/RadioProgresso</url>
+	<streamType>hls</streamType>
+	<encodingProfile>project-a-clip-2</encodingProfile>
+	<language_s>spa</language_s>
+	<country_s>cu</country_s>
+	<thumbnail>/static-assets/images/channels/c9689ca8-14b1-d4b7-17b6-df2271d3d07d/Radio_Habana_Cuba.png</thumbnail>
+	<audioOnly>true</audioOnly>
+	<offline>false</offline>
+	<hidden>false</hidden>
+	<description>&lt;p&gt;Radio Havana Cuba (Spanish: Radio Habana Cuba, RHC) is the official government-run international broadcasting station of Cuba. It can be heard in many parts of the world including the United States on shortwave at 5040 kHz, 6000 kHz, 6145 kHz, and other frequencies. Radio Havana, along with Radio Rebelde, Cubavision Television and other Cuban Radio and Television broadcasts to Europe, North America, Central and South America via free-to-air satellite from the Hispanisat satellite over the Atlantic Ocean and via Internet streaming.&lt;/p&gt;</description>
+	<createdDate>2018-09-14T16:09:41.200Z</createdDate>
+	<createdDate_dt>2018-09-14T16:09:41.200Z</createdDate_dt>
+	<lastModifiedDate>2018-09-14T16:09:41.200Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-09-14T16:09:41.200Z</lastModifiedDate_dt>
+</component>
