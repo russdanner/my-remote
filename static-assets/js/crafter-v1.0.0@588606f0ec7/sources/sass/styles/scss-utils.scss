@@ -1,0 +1,54 @@
+// https://css-tricks.com/snippets/sass/bem-mixins/
+/// Block Element
+/// @access public
+/// @param {String} $element - Element's name
+@mixin element($element) {
+    &__#{$element} {
+      @content;
+    }
+  }
+
+  /// Block Modifier
+  /// @access public
+  /// @param {String} $modifier - Modifier's name
+  @mixin modifier($modifier) {
+    &--#{$modifier} {
+      @content;
+    }
+  }
+
+@mixin custom-scroll() {
+  &::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #73859f;
+    outline: 1px solid slategrey;
+  }
+}
+
+@mixin text-weight-light {
+  font-weight: 300;
+}
+
+@mixin text-weight-regular {
+  font-weight: 400;
+}
+
+@mixin text-weight-medium {
+  font-weight: 500;
+}
+
+@mixin text-weight-semi-bold {
+  font-weight: 600;
+}
+
+@mixin text-weight-bold {
+  font-weight: 700;
+}
