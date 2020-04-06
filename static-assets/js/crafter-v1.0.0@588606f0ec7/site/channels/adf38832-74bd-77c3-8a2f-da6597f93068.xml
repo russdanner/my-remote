@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<content-type>/component/channel</content-type>	<display-template/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>adf3</objectGroupId>
+	<objectId>adf38832-74bd-77c3-8a2f-da6597f93068</objectId>
+	<file-name>adf38832-74bd-77c3-8a2f-da6597f93068.xml</file-name>
+	<internal-name>Al Jazeera Mubasher Al-‘Amma</internal-name>
+	<title>Al Jazeera Mubasher Al-‘Amma</title>
+	<bitrate>626000</bitrate>
+	<lowBitrate>200000</lowBitrate>
+	<url>https://4l9z9a9mab.execute-api.us-east-2.amazonaws.com/api/AlJazirahLive</url>
+	<streamType>hls</streamType>
+	<encodingProfile>project-a-clip-2</encodingProfile>
+	<language_s>ara</language_s>
+	<country_s>qa</country_s>
+	<thumbnail>/static-assets/images/channels/adf38832-74bd-77c3-8a2f-da6597f93068/Al_Jazeera-live.png</thumbnail>
+	<audioOnly>false</audioOnly>
+	<offline>false</offline>
+	<hidden>false</hidden>
+	<description>&lt;p&gt;Al Jazeera Mubasher Al-‘Amma is a television channel launched by Al Jazeera Media Network originally on April 15, 2005. It is an all-Arabic channel based in Doha, Qatar that broadcasts conferences and other events live without editing or commentary, using subtitles when translation is needed. The channel is also sometimes referred to as Al Jazeera Live, as Mubasher is an Arabic word for Live (as in live broadcast) and Al-‘Amma is Arabic for General. The channel was formerly called just Al Jazeera Mubasher.&lt;/p&gt;</description>
+	<createdDate>2018-09-14T15:56:44.277Z</createdDate>
+	<createdDate_dt>2018-09-14T15:56:44.277Z</createdDate_dt>
+	<lastModifiedDate>2018-09-14T15:56:44.277Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-09-14T15:56:44.277Z</lastModifiedDate_dt>
+</component>
