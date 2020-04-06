@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<content-type>/component/channel</content-type>	<display-template/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>829d</objectGroupId>
+	<objectId>829d0625-a15c-23ec-9579-00de6a58f63d</objectId>
+	<file-name>829d0625-a15c-23ec-9579-00de6a58f63d.xml</file-name>
+	<internal-name>Radio Progresso</internal-name>
+	<title>Radio Progresso</title>
+	<bitrate>212000</bitrate>
+	<url>https://4l9z9a9mab.execute-api.us-east-2.amazonaws.com/api/RadioProgresso</url>
+	<streamType>hls</streamType>
+	<language_s>spa</language_s>
+	<country_s>cu</country_s>
+	<thumbnail>/static-assets/images/channels/829d0625-a15c-23ec-9579-00de6a58f63d/Radio_Progresso.jpg</thumbnail>
+	<audioOnly>true</audioOnly>
+	<offline>false</offline>
+	<hidden>false</hidden>
+	<description>&lt;p&gt;Radio Progreso is a Cuban Spanish language radio station. Founded on 15 December 1929, it has provided musical and other cultural programmes ever since. Live performances are held in Studio 1 (Estudio Uno) which holds an audience of 300 people. The slogan of Radio Progreso is La Onda de la Alegria.&lt;/p&gt;</description>
+	<createdDate>2018-07-31T19:27:07.805Z</createdDate>
+	<createdDate_dt>2018-07-31T19:27:07.805Z</createdDate_dt>
+	<lastModifiedDate>2018-08-08T20:36:12.534Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-08-08T20:36:12.534Z</lastModifiedDate_dt>
+	<lowBitrate>100000</lowBitrate>
+	<encodingProfile>project-a-clip-2</encodingProfile>
+</component>
