@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<content-type>/component/taxonomy</content-type>	<display-template/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>ffde</objectGroupId>
+	<objectId>ffdedab3-c947-8338-2419-1a741b47bb33</objectId>
+	<items item-list="true">	<item>	<key>https://547f72e6652371c3.mediapackage.us-east-1.amazonaws.com/out/v1/50004c1ff70c42d886771697f0b79285/index.m3u8</key>
+	<value>Big Buck Bunny</value>
+	</item>	<item>	<key>https://547f72e6652371c3.mediapackage.us-east-1.amazonaws.com/out/v1/c62eb38c2e4b4bcf87fc7514bc85a75c/index.m3u8</key>
+	<value>Dog Park (Spanish)</value>
+	</item>	<item>	<key>https://547f72e6652371c3.mediapackage.us-east-1.amazonaws.com/out/v1/9075e7b4b8d644508ba8c31e0c3c7083/index.m3u8</key>
+	<value>K-Pop</value>
+	</item>	<item>	<key>https://d1znu9hcihiapf.cloudfront.net/index.m3u8</key>
+	<value>Parade</value>
+	</item>	<item>	<key>https://4l9z9a9mab.execute-api.us-east-2.amazonaws.com/api/RadioProgresso</key>
+	<value>Radio Progresso</value>
+	</item>	<item>	<key>https://4l9z9a9mab.execute-api.us-east-2.amazonaws.com/api/AlJazeeraEnglishHD</key>
+	<value>Al Jazeera English</value>
+	</item>	<item>	<key>https://4l9z9a9mab.execute-api.us-east-2.amazonaws.com/api/AlJazirahLive</key>
+	<value>NHK General</value>
+	</item>	<item>	<key>https://4l9z9a9mab.execute-api.us-east-2.amazonaws.com/api/CCTV1</key>
+	<value>China Central TV-1</value>
+	</item>	<item>	<key>https://4l9z9a9mab.execute-api.us-east-2.amazonaws.com/api/BBCArabic-JN</key>
+	<value>Saudi Arabia TV2</value>
+	</item>	<item>	<key>https://4l9z9a9mab.execute-api.us-east-2.amazonaws.com/api/RealitateaTV</key>
+	<value>teleSUR</value>
+	</item>	<item>	<key>https://4l9z9a9mab.execute-api.us-east-2.amazonaws.com/api/Cubavision</key>
+	<value>Vietnam TV1</value>
+	</item>	<item>	<key>https://4l9z9a9mab.execute-api.us-east-2.amazonaws.com/api/CCTVXinwen</key>
+	<value>China Central TV-13</value>
+	</item>	<item>	<key>https://4l9z9a9mab.execute-api.us-east-2.amazonaws.com/api/CDN</key>
+	<value>Bolivia TV</value>
+	</item></items>
+	<internal-name>Video Streams</internal-name>
+	<file-name>video-streams.xml</file-name>
+	<folder-name/>
+	<createdDate>2018-02-28T17:04:30.070Z</createdDate>
+	<createdDate_dt>2018-02-28T17:04:30.070Z</createdDate_dt>
+	<lastModifiedDate>2018-09-14T15:31:08.592Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-09-14T15:31:08.592Z</lastModifiedDate_dt>
+</component>
