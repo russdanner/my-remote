@@ -1,0 +1,85 @@
+/// Mixin to place items on a circle
+/// @author Hugo Giraudel
+/// @author Ana Tudor
+/// @param {Integer} $item-count - Number of items on the circle
+/// @param {Length} $circle-size - Large circle size
+/// @param {Length} $item-size - Single item size
+@mixin on-circle($item-count, $circle-size, $item-size) {
+  position: relative;
+  width:  $circle-size;
+  height: $circle-size;
+  padding: 0;
+  border-radius: 50%;
+  list-style: none;
+
+  > * {
+    display: block;
+    position: absolute;
+    top:  50%;
+    left: 50%;
+    width:  $item-size;
+    height: $item-size;
+    margin: -($item-size / 2);
+
+    $angle: (360 / $item-count);
+    $rot: 270;
+
+    @for $i from 1 through $item-count {
+      &:nth-child(#{$i}) {
+        transform:
+          rotate($rot * 1deg)
+          translate(($circle-size / 2) - $item-size)
+          rotate($rot * -1deg);
+      }
+
+      $rot: $rot + $angle;
+    }
+  }
+}
+
+
+/* Round Controls */
+.video-control-wheel {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  pointer-events: none;
+  .app-controls-bar {
+    background-color:rgba(38, 38, 38, 0.8);
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+    pointer-events: all;
+    flex-shrink: 0;
+  }
+
+  .control-button-group {
+    @include on-circle($item-count: 6, $circle-size: 130px, $item-size: 24px);
+    margin: 0;
+  }
+  .control-button {
+    min-width: 24px;
+    padding: 0;
+    background: none;
+  }
+
+  &__title {
+    padding-bottom: 10px;
+    color: rgb(250, 250, 250);
+    font-size: 30px;
+    text-shadow: 2px 1px black;
+  }
+}
+
+.multi-view-video-wrap {
+  position: relative;
+  &:hover {
+    .video-control-wheel {
+      display: flex;
+    }
+  }
+}
