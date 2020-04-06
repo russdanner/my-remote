@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<content-type>/component/group-roles</content-type>	<display-template/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>ba6d</objectGroupId>
+	<objectId>ba6db29d-e765-28d6-f184-c4e7e48e60e3</objectId>
+	<groups><item>	<group>project-a-admins</group>
+	<role>edit-programs</role>
+	</item>	<item>	<group>project-a-schedule-admins</group>
+	<role>edit-programs</role>
+	</item></groups>
+	<file-name>group-roles.xml</file-name>
+	<folder-name/>
+	<internal-name>Group Roles</internal-name>
+	<createdDate>2018-07-17T20:14:03.803Z</createdDate>
+	<createdDate_dt>2018-07-17T20:14:03.803Z</createdDate_dt>
+	<lastModifiedDate>2018-07-19T18:08:04.349Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-07-19T18:08:04.349Z</lastModifiedDate_dt>
+</component>
