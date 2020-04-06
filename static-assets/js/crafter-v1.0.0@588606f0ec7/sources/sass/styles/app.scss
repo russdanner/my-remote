@@ -1,0 +1,277 @@
+
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #222;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.video-js {
+  margin: auto;
+}
+
+.app-player-container {
+
+}
+
+.app-player-zoom-container {
+  background: #F0F0F0;
+  padding: 15px 15px 40px;
+}
+
+.app-player-zoom-container-is-trimming {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 45px 40px;
+  .app-seeker-zoom {
+    flex-grow: 1;
+    margin-top: 5px;
+  }
+  .playback-position-control {
+    color: #666666;
+    background-color: #fff;
+    input {
+      background: #FFF;
+      color: #666666;
+    }
+  }
+  .app-player-zoom-scrubber-bounds {
+    & > *:first-child {
+      margin-bottom: 5px;
+    }
+  }
+  .scrubber-bounds-title {
+    margin-right: 15px;
+  }
+}
+
+.scrubber-bounds-title {
+
+}
+
+.app-seeker-zoom {
+  margin: auto;
+  padding: 0 20px;
+  max-width: 800px;
+}
+
+.app-seeker-zoom-title {
+  margin: 0 0 10px;
+}
+
+$seekerRailHeight: 10px;
+$seekerHandleSize: 15px;
+
+.app-seeker-wrapper {
+  height: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 60px;
+}
+
+.app-seeker {
+  display: flex;
+  .rc-slider-handle {
+    width: $seekerHandleSize;
+    height: $seekerHandleSize;
+    border: none;
+    background: #F2F2F2;
+  }
+  .rc-slider-track {
+    background-color: transparent;
+  }
+}
+
+.app-seeker-timestamp {
+  height: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.app-seeker,
+.app-trimmer {
+  .rc-slider-handle {
+    border: none;
+    margin-top: -2.5px;
+    width: $seekerHandleSize;
+    height: $seekerHandleSize;
+    background: #F2F2F2;
+  }
+  .rc-slider-track {
+    height: $seekerRailHeight;
+  }
+  .rc-slider-rail {
+    height: $seekerRailHeight;
+    background: #444444;
+  }
+  .rc-slider-step {
+    display: none;
+  }
+  .rc-slider-dot {
+    border: none;
+    background: #444;
+    width: $seekerRailHeight;
+    height: $seekerRailHeight;
+  }
+  .rc-slider-mark {
+    top: -35px;
+  }
+}
+
+.rc-slider-tooltip {
+
+}
+
+.rc-slider-tooltip-inner {
+
+}
+
+.app-seeker-back-to-live {
+  cursor: pointer;
+  width: $seekerHandleSize;
+  height: $seekerHandleSize;
+  max-width: $seekerHandleSize;
+  min-width: $seekerHandleSize;
+  margin-top: 2.5px;
+  margin-left: $seekerHandleSize;
+  border-radius: 50%;
+  background: none;
+  border: 1px solid #4caf50;
+  &.live {
+    border: none;
+    background: #4caf50;
+    box-shadow: 0 0 10px rgba(#95e498, .8);
+  }
+}
+
+.app-trimmer {
+  .rc-slider-handle {
+
+  }
+  .rc-slider-track {
+    background-color: #2196EB;
+  }
+}
+
+.app-video-pause-overlay {
+  cursor: pointer;
+  top: 0;
+  left: -1px;
+  right: -1px;
+  bottom: 0;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  background: rgba(0, 0, 0, .8);
+  &:hover {
+    .material-icons {
+      transform: scale(1.2, 1.2);
+    }
+  }
+  &--solid {
+    background: rgba(0, 0, 0, 1);
+  }
+  .icon-display {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+  }
+  .material-icons {
+    color: #fff;
+    font-size: 150px;
+    transition: all ease-in-out 200ms;
+  }
+}
+
+.app-player-ruler {
+  width: 100%;
+  height: 15px;
+  max-width: 100%;
+  min-width: 100%;
+  overflow: hidden;
+  margin-top: 10px;
+  position: relative;
+  .app-ruler {
+    top: 0px;
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    background-size: 100px 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3) 0px, rgba(0, 0, 0, 0.3) 1px, transparent 1px, transparent 5px);
+    filter: drop-shadow(0px 0px 0px white) drop-shadow(0px 0 0px rgba(255, 255, 255, 1));
+    &.middle {
+      top: 5px;
+      background-size: 50px 1px;
+    }
+    &.bottom {
+      top: 10px;
+      background-size: 10px 1px;
+    }
+  }
+  .app-ruler-labels {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    display: flex;
+    font-size: 10px;
+    user-select: none;
+    list-style: none;
+    display: none;
+  }
+  .app-ruler-item {
+    height: 25px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 100px;
+    pointer-events: none;
+  }
+}
+
+.app-player-trimmer-controls {
+  color: #fff;
+  display: flex;
+  padding: 18px 0;
+  align-content: baseline;
+  justify-content: center;
+  & > * {
+    padding: 0 10px;
+  }
+  .playback-position-control {
+    margin: 0 5px;
+  }
+}
+
+.loading-indicator,
+.spinning-indicator {
+  animation: rotate-360 2s linear infinite;
+}
+
+.clock-component {
+  align-items: center;
+  display: inline-flex;
+  &.preferences-clock {
+    width: 100%;
+    color: $color-muted;
+    justify-content: flex-end;
+    font-family: Monospaced, monospace;
+  }
+}
+
+.react-datepicker__time-list {
+  padding-left: 0;
+}
