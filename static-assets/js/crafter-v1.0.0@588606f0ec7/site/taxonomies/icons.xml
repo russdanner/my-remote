@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ - Copyright (C) 2007-2018 Crafter Software Corporation. All Rights Reserved.
+ -
+ - This program is licensed under the Crafter Enterprise Software License Agreement,
+ - and its use is strictly limited to operation with Crafter CMS Enterprise Edition.
+ - Unauthorized use, distribution, or modification is strictly prohibited.
+-->
+
+<component>
+    <content-type>/component/taxonomy</content-type>
+    <display-template/>
+    <merge-strategy>inherit-levels</merge-strategy>
+    <objectGroupId>a7f2</objectGroupId>
+    <objectId>a7f288fa-500b-30ba-3207-05dccc9877dc</objectId>
+    <items>
+        <item>
+            <key>&#xE639;</key>
+            <value>Live TV</value>
+        </item>
+        <item>
+            <key>&#xE14E;</key>
+            <value>Content Cut</value>
+        </item>
+        <item>
+            <key>fa-user</key>
+            <value>User</value>
+        </item>
+        <item>
+            <key>fa-pencil-square-o</key>
+            <value>Pencil Square O</value>
+        </item>
+        <item>
+            <key>fa-anchor</key>
+            <value>Anchor</value>
+        </item>
+        <item>
+            <key>fa-home</key>
+            <value>Home</value>
+        </item>
+        <item>
+            <key>fa-film</key>
+            <value>Film</value>
+        </item>
+    </items>
+    <file-name>icons.xml</file-name>
+    <folder-name/>
+    <internal-name>Icons</internal-name>
+    <createdDate>2017-9-11T21:52:44.000Z</createdDate>
+    <createdDate_dt>2017-9-11T21:52:44.000Z</createdDate_dt>
+    <lastModifiedDate>2017-9-13T19:43:15.000Z</lastModifiedDate>
+    <lastModifiedDate_dt>2017-9-13T19:43:15.000Z</lastModifiedDate_dt>
+</component>
