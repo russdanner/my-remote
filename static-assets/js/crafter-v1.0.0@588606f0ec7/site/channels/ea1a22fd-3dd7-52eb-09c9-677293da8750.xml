@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<content-type>/component/channel</content-type>	<display-template/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>ea1a</objectGroupId>
+	<objectId>ea1a22fd-3dd7-52eb-09c9-677293da8750</objectId>
+	<file-name>ea1a22fd-3dd7-52eb-09c9-677293da8750.xml</file-name>
+	<internal-name>cdn 37</internal-name>
+	<title>cdn 37</title>
+	<bitrate>633000</bitrate>
+	<lowBitrate>200000</lowBitrate>
+	<url>https://4l9z9a9mab.execute-api.us-east-2.amazonaws.com/api/CDN</url>
+	<streamType>hls</streamType>
+	<encodingProfile>project-a-clip-2</encodingProfile>
+	<language_s>spa</language_s>
+	<country_s>do</country_s>
+	<thumbnail>/static-assets/images/channels/ea1a22fd-3dd7-52eb-09c9-677293da8750/CDN_37.png</thumbnail>
+	<audioOnly>false</audioOnly>
+	<offline>false</offline>
+	<hidden>false</hidden>
+	<description>&lt;p&gt;CDN Channel 37 (Cadena de Noticias TV S.A.) is a Dominican commercial broadcasting company founded in 1996, broadcasting on channel number 37.&lt;/p&gt;</description>
+	<createdDate>2018-09-14T16:22:11.331Z</createdDate>
+	<createdDate_dt>2018-09-14T16:22:11.331Z</createdDate_dt>
+	<lastModifiedDate>2018-09-14T16:22:11.331Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-09-14T16:22:11.331Z</lastModifiedDate_dt>
+</component>
