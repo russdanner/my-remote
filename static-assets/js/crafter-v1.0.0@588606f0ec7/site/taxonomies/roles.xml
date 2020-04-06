@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<content-type>/component/taxonomy</content-type>	<display-template/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>0753</objectGroupId>
+	<objectId>07533641-6608-b737-4adc-402c65723c7e</objectId>
+	<items>	<item>	<key>edit-programs</key>
+	<value>Edit Programs</value>
+	</item></items>
+	<file-name>roles.xml</file-name>
+	<folder-name/>
+	<internal-name>Roles</internal-name>
+	<createdDate>2018-07-17T18:26:21.584Z</createdDate>
+	<createdDate_dt>2018-07-17T18:26:21.584Z</createdDate_dt>
+	<lastModifiedDate>2018-07-19T16:44:42.148Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-07-19T16:44:42.148Z</lastModifiedDate_dt>
+</component>
