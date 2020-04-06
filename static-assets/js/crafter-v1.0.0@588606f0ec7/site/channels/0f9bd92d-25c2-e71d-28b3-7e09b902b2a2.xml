@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<content-type>/component/channel</content-type>	<display-template/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>0f9b</objectGroupId>
+	<objectId>0f9bd92d-25c2-e71d-28b3-7e09b902b2a2</objectId>
+	<file-name>0f9bd92d-25c2-e71d-28b3-7e09b902b2a2.xml</file-name>
+	<internal-name>CCTV-1</internal-name>
+	<title>CCTV-1</title>
+	<bitrate>635000</bitrate>
+	<lowBitrate>200000</lowBitrate>
+	<url>https://4l9z9a9mab.execute-api.us-east-2.amazonaws.com/api/CCTV1</url>
+	<streamType>hls</streamType>
+	<encodingProfile>project-a-clip-2</encodingProfile>
+	<language_s>zho</language_s>
+	<country_s>cn</country_s>
+	<audioOnly>false</audioOnly>
+	<offline>false</offline>
+	<hidden>false</hidden>
+	<thumbnail>/static-assets/images/channels/0f9bd92d-25c2-e71d-28b3-7e09b902b2a2/CCTV-1.png</thumbnail>
+	<description>&lt;p&gt;CCTV-1 (China Central Television) is the primary channel in CCTV, the national flagship terrestrial television network of the People&amp;#39;s Republic of China. It broadcasts a range of programs from China Central Television Headquarters at East 3rd Ring Road in Beijing and is available to both cable and terrestrial television viewers. The terrestrial signal of CCTV-1 is free-to-air across China. However, due to copyright restrictions, the satellite signal of CCTV-1 is encrypted, and smartcards are necessary for decryption.&lt;/p&gt;</description>
+	<createdDate>2018-09-14T16:00:37.815Z</createdDate>
+	<createdDate_dt>2018-09-14T16:00:37.815Z</createdDate_dt>
+	<lastModifiedDate>2018-09-14T16:00:37.815Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-09-14T16:00:37.815Z</lastModifiedDate_dt>
+</component>
