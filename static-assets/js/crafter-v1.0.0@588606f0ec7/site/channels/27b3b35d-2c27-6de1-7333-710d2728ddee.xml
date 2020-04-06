@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<content-type>/component/channel</content-type>	<display-template/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>27b3</objectGroupId>
+	<objectId>27b3b35d-2c27-6de1-7333-710d2728ddee</objectId>
+	<file-name>27b3b35d-2c27-6de1-7333-710d2728ddee.xml</file-name>
+	<internal-name>Discovery Channel</internal-name>
+	<title>Discovery Channel</title>
+	<bitrate>5000000</bitrate>
+	<lowBitrate>1000000</lowBitrate>
+	<url>https://547f72e6652371c3.mediapackage.us-east-1.amazonaws.com/out/v1/50004c1ff70c42d886771697f0b79285/index.m3u8</url>
+	<streamType>hls</streamType>
+	<encodingProfile>project-a-clip-2</encodingProfile>
+	<language_s>eng</language_s>
+	<country_s>us</country_s>
+	<audioOnly>false</audioOnly>
+	<offline>false</offline>
+	<hidden>false</hidden>
+	<thumbnail>/static-assets/images/channels/27b3b35d-2c27-6de1-7333-710d2728ddee/Discovery-Channel.png</thumbnail>
+	<description>&lt;p&gt;Discovery Channel (known as The Discovery Channel from 1985 to 1995, and often referred to as simply Discovery) is an American pay television channel that is the flagship television property of Discovery, Inc., a publicly traded company run by CEO David Zaslav. As of June 2012, Discovery Channel is the third most widely distributed subscription channel in the United States, behind TBS and The Weather Channel it is available in 409 million households worldwide, through its U.S. flagship channel and its various owned or licensed television channels internationally.&lt;/p&gt;</description>
+	<createdDate>2018-09-14T15:46:46.277Z</createdDate>
+	<createdDate_dt>2018-09-14T15:46:46.277Z</createdDate_dt>
+	<lastModifiedDate>2018-09-14T15:46:46.277Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-09-14T15:46:46.277Z</lastModifiedDate_dt>
+</component>
