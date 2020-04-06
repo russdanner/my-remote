@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<content-type>/component/channel</content-type>	<display-template/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>0200</objectGroupId>
+	<objectId>02009bb4-180e-7514-2cce-c8ec73f5e131</objectId>
+	<file-name>02009bb4-180e-7514-2cce-c8ec73f5e131.xml</file-name>
+	<internal-name>BBC Arabic</internal-name>
+	<title>BBC Arabic</title>
+	<bitrate>631000</bitrate>
+	<lowBitrate>200000</lowBitrate>
+	<url>https://4l9z9a9mab.execute-api.us-east-2.amazonaws.com/api/BBCArabic-JN</url>
+	<streamType>hls</streamType>
+	<encodingProfile>project-a-clip-2</encodingProfile>
+	<language_s>ara</language_s>
+	<country_s>gb</country_s>
+	<thumbnail>/static-assets/images/channels/02009bb4-180e-7514-2cce-c8ec73f5e131/BBC_Arabic.png</thumbnail>
+	<audioOnly>false</audioOnly>
+	<offline>false</offline>
+	<hidden>false</hidden>
+	<description>&lt;p&gt;BBC Arabic Television is a television news channel broadcast to the Arab World by the BBC. It was launched on 11 March 2008. It is run by the BBC World Service and funded from the British television licence fee.&lt;/p&gt;</description>
+	<createdDate>2018-09-14T16:07:33.860Z</createdDate>
+	<createdDate_dt>2018-09-14T16:07:33.860Z</createdDate_dt>
+	<lastModifiedDate>2018-09-14T16:07:33.860Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-09-14T16:07:33.860Z</lastModifiedDate_dt>
+</component>
