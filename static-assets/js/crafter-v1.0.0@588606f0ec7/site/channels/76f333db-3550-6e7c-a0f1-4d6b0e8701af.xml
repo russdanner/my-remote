@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<content-type>/component/channel</content-type>	<display-template/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>76f3</objectGroupId>
+	<objectId>76f333db-3550-6e7c-a0f1-4d6b0e8701af</objectId>
+	<file-name>76f333db-3550-6e7c-a0f1-4d6b0e8701af.xml</file-name>
+	<internal-name>CBS</internal-name>
+	<title>CBS</title>
+	<bitrate>5000000</bitrate>
+	<url>https://d1znu9hcihiapf.cloudfront.net/index.m3u8</url>
+	<streamType>hls</streamType>
+	<language_s>eng</language_s>
+	<country_s>us</country_s>
+	<thumbnail>/static-assets/images/channels/76f333db-3550-6e7c-a0f1-4d6b0e8701af/CBS.png</thumbnail>
+	<description>&lt;p&gt;CBS (an initialism of the network&amp;#39;s former name, the Columbia Broadcasting System) is an American English language commercial broadcast television network that is a flagship property of CBS Corporation. The company is headquartered at the CBS Building in New York City with major production facilities and operations in New York City (at the CBS Broadcast Center) and Los Angeles (at CBS Television City and the CBS Studio Center).&lt;/p&gt;</description>
+	<createdDate>2018-06-26T15:51:52.722Z</createdDate>
+	<createdDate_dt>2018-06-26T15:51:52.722Z</createdDate_dt>
+	<lastModifiedDate>2018-08-08T20:35:20.255Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-08-08T20:35:20.255Z</lastModifiedDate_dt>
+	<audioOnly>false</audioOnly>
+	<offline>false</offline>
+	<hidden>false</hidden>
+	<lowBitrate>1000000</lowBitrate>
+	<encodingProfile>project-a-clip-2</encodingProfile>
+</component>
