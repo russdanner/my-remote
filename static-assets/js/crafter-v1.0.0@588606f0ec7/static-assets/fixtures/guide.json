@@ -1,0 +1,131 @@
+{
+  "channels": [
+    {
+      "assetType": "channel",
+      "id": "a33f8c1a-4145-bbde-9335-79257a439e81",
+      "localId": "/site/channels/a33f8c1a-4145-bbde-9335-79257a439e81.xml",
+      "title": "Al Jazeera",
+      "description": "<p>Al Jazeera, literally \"The Island\", though referring to the Arabian Peninsula in context, also known as JSC (Jazeera Satellite Channel), is a state-funded broadcaster in Doha, Qatar, owned by the Al Jazeera Media Network. Initially launched as an Arabic news and current-affairs satellite TV channel, Al Jazeera has since expanded into a network with several outlets, including the Internet and specialty television channels in multiple languages.<br />Al Jazeera Media Network is a major global news organization, with 80 bureaux around the world. The original Al Jazeera Arabic channel&#39;s willingness to broadcast dissenting views, for example on call-in shows, created controversies in the Arab States of the Persian Gulf. The station gained worldwide attention following the outbreak of the war in Afghanistan, when its office there was the only channel to cover the war live.</p>",
+      "countryId": "qa",
+      "languageId": "ara",
+      "bitrate": "5 Mbps",
+      "rawBitrate": "5000000",
+      "lowBitrate": "0 Mbps",
+      "rawLowBitrate": "12",
+      "encodingProfile": "default",
+      "streamType": "hls",
+      "url": "https://547f72e6652371c3.mediapackage.us-east-1.amazonaws.com/out/v1/50004c1ff70c42d886771697f0b79285/index.m3u8",
+      "thumbnailUrl": "/static-assets/images/channels/a33f8c1a-4145-bbde-9335-79257a439e81/Aljazeera.png",
+      "audioOnly": false,
+      "offline": false,
+      "hidden": false,
+      "tags": [
+        { "label": "a new value" },
+        { "label": "channel playback test" }
+      ]
+    }
+  ],
+  "episodes": [
+    {
+      "assetType": "episode",
+      "id": "1",
+      "title": "The Pilot",
+      "description": "Rachel moves in with Monica, finding newfound independence after leaving her fiancé at the altar. Chandler and Joey console Ross after his divorce from Carol, his lesbian wife. Monica falls for a colleague and is crushed to learn their moment of passion was only a one night stand.",
+      "tags": ["James Burrows", "September 22", "1994"],
+      "url": "https://547f72e6652371c3.mediapackage.us-east-1.amazonaws.com/out/v1/50004c1ff70c42d886771697f0b79285/index.m3u8",
+      "thumbnailUrl": "/static-assets/images/channels/a33f8c1a-4145-bbde-9335-79257a439e81/Aljazeera.png",
+      "startTime": "1534586884610",
+      "endTime": "1534588684610",
+      "channelId": "a33f8c1a-4145-bbde-9335-79257a439e81",
+      "programId": "1",
+      "countryId": "us",
+      "languageId": "eng",
+      "saved": false,
+      "offline": false,
+      "audioOnly": false
+    },
+    {
+      "assetType": "episode",
+      "id": "2",
+      "title": "The One with the Sonogram at the End",
+      "description": "Carol, Ross' lesbian ex-wife, tells him at work that she is pregnant with his child and, when he attends the sonogram, is stunned to learn that she wants to give the baby her and her lesbian lover's last names. Monica nearly has a breakdown from stressing when her and Ross' parents come for dinner. Ross and Rachel console each other, as she has to return her engagement ring to Barry and finds out that he and her maid of honor Mindy, went on her honeymoon.",
+      "tags": ["David Crane", "Marta Kauffman", "September 29"],
+      "url": "https://547f72e6652371c3.mediapackage.us-east-1.amazonaws.com/out/v1/50004c1ff70c42d886771697f0b79285/index.m3u8",
+      "thumbnailUrl": "/static-assets/images/channels/a33f8c1a-4145-bbde-9335-79257a439e81/Aljazeera.png",
+      "startTime": "1534586884610",
+      "endTime": "1534588684610",
+      "channelId": "a33f8c1a-4145-bbde-9335-79257a439e81",
+      "programId": "1",
+      "countryId": "us",
+      "languageId": "eng",
+      "saved": false,
+      "offline": false,
+      "audioOnly": false
+    },
+    {
+      "assetType": "episode",
+      "id": "3",
+      "title": "The One with the Thumb",
+      "description": "Monica becomes irritated when everyone likes her new boyfriend Alan, more than she does. Chandler starts smoking again, and when the group complains, he diverts their attention to their own faults. Phoebe gets money put into her bank account that isn't hers, and when she complains, she gets more so she gives it to her homeless friend who buys her a can of soda, only to find a thumb in the can of soda. Phoebe uses the money from the soda company to pay Chandler to quit smoking.",
+      "tags": ["Jeffrey Astrof", "Mike Sikowitz", "October 1994"],
+      "url": "https://547f72e6652371c3.mediapackage.us-east-1.amazonaws.com/out/v1/50004c1ff70c42d886771697f0b79285/index.m3u8",
+      "thumbnailUrl": "/static-assets/images/channels/a33f8c1a-4145-bbde-9335-79257a439e81/Aljazeera.png",
+      "startTime": "1534586884610",
+      "endTime": "1534588684610",
+      "channelId": "a33f8c1a-4145-bbde-9335-79257a439e81",
+      "programId": "1",
+      "countryId": "us",
+      "languageId": "eng",
+      "saved": false,
+      "offline": false,
+      "audioOnly": false
+    },
+    {
+      "assetType": "episode",
+      "id": "4",
+      "title": "The One with George Stephanopoulos",
+      "description": "Ross, upset about it being the anniversary of his first time sleeping with Carol, goes to a Rangers game with Chandler and Joey and gets hit in the face by a puck, and is taken to the hospital. There, Ross reveals Carol is the only woman he's ever slept with. Rachel gets her first paycheck but is angry that most of her money went to FICA, and also gets a visit from her old friends, which depresses her further about her new life. To cheer her up, Monica and Phoebe have a slumber party which isn't very fun due to Rachel's depressed state, until the girls spy on George Stephanopoulos, whose pizza was delivered to them by mistake, across the street.",
+      "tags": ["Alexa Junge"],
+      "url": "https://547f72e6652371c3.mediapackage.us-east-1.amazonaws.com/out/v1/50004c1ff70c42d886771697f0b79285/index.m3u8",
+      "thumbnailUrl": "/static-assets/images/channels/a33f8c1a-4145-bbde-9335-79257a439e81/Aljazeera.png",
+      "startTime": "1534586884610",
+      "endTime": "1534588684610",
+      "channelId": "a33f8c1a-4145-bbde-9335-79257a439e81",
+      "programId": "1",
+      "countryId": "us",
+      "languageId": "eng",
+      "saved": false,
+      "offline": false,
+      "audioOnly": false
+    }
+  ],
+  "programs": [
+    {
+      "assetType": "program",
+      "id": "1",
+      "title": "Friends",
+      "description": "The only program's description",
+      "channelId": "a33f8c1a-4145-bbde-9335-79257a439e81",
+      "thumbnailUrl": "",
+      "start": {
+        "hours": 12,
+        "minutes": 0
+      },
+      "end": {
+        "hours": 12,
+        "minutes": 30
+      },
+      "saved": false,
+      "saveEndDate": null,
+      "frequency": ["Mon", "Wed", "Fri"]
+    }
+  ],
+  "entries": {
+    "a33f8c1a-4145-bbde-9335-79257a439e81": { "episodeIds": [1,2,3,4] },
+    "76f333db-3550-6e7c-a0f1-4d6b0e8701af": { "episodeIds": [2,1] },
+    "486b65d7-4186-d8bd-79f3-f91541304326": { "episodeIds": [1,2] },
+    "a0d09bab-4b5e-6a8f-81e8-d00f218c4937": { "episodeIds": [2,1,4,3] },
+    "829d0625-a15c-23ec-9579-00de6a58f63d": { "episodeIds": [1,2] },
+    "012378fd-678e-bf6d-ea8a-eb978b757fce": { "episodeIds": [2,1,4,3] }
+  }
+}
