@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ - Copyright (C) 2007-2018 Crafter Software Corporation. All Rights Reserved.
+ -
+ - This program is licensed under the Crafter Enterprise Software License Agreement,
+ - and its use is strictly limited to operation with Crafter CMS Enterprise Edition.
+ - Unauthorized use, distribution, or modification is strictly prohibited.
+-->
+
+<component>
+	<content-type>/component/taxonomy</content-type>	<display-template/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>fe8c</objectGroupId>
+	<objectId>fe8cb4b4-b0cc-54a0-5652-ff08b2f704fe</objectId>
+	<items>	<item>	<key>hls</key>
+	<value>HTTP Live Streaming</value>
+	</item>	<item>	<key>dash</key>
+	<value>Dynamic Adaptive Streaming over HTTP</value>
+	</item>	<item>	<key>msss</key>
+	<value>Microsoft Smooth</value>
+	</item>	<item>	<key>hds</key>
+	<value>Adobe HTTP Dynamic Streaming</value>
+	</item></items>
+	<file-name>stream-type.xml</file-name>
+	<folder-name/>
+	<internal-name>Stream Type</internal-name>
+	<createdDate>2018-02-21T14:10:36.030Z</createdDate>
+	<createdDate_dt>2018-02-21T14:10:36.030Z</createdDate_dt>
+	<lastModifiedDate>2018-02-21T14:14:22.597Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-02-21T14:14:22.597Z</lastModifiedDate_dt>
+</component>
