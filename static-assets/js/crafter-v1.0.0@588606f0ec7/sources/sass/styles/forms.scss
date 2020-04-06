@@ -1,0 +1,405 @@
+/**
+ * TEXT FIELD
+ */
+.form__text-field {
+  background: #FFF;
+  border: 1px solid #DDDDDD;
+  color: #858585;
+  font-size: 16px;
+  font-weight: 200;
+  height: 45px;
+  width: 100%;
+  padding: 0 15px;
+}
+
+.form__text-area {
+  @extend .form__text-field;
+  resize: none;
+  min-height: 120px;
+  padding: 10px 15px;
+  font-family: "Barlow", sans-serif;
+}
+
+/**
+ * DROPDOWN: searchable options, dropdown, selections, etc
+ */
+.form-dropdown {
+
+}
+
+.form-dropdown__hd, select {
+  background: #FFF;
+  border: 1px solid #DDDDDD;
+  color: #858585;
+  cursor: pointer;
+  padding: 0 15px;
+  line-height: 43px;
+  position: relative;
+  i {
+    color: #858585;
+    position: absolute;
+    top: 0;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.form-dropdown__ddwrapper {
+  position: relative;
+}
+
+.form-dropdown__bd {
+  display: none;
+  position: absolute;
+  width: 100%;
+  z-index: 9;
+}
+
+.form-dropdown--active {
+  .form-dropdown__bd {
+    display: block;
+  }
+}
+
+.form-dropdown__options {
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  background: #FFF;
+  list-style: none;
+  max-height: 150px;
+  border: 1px solid #DDDDDD;
+  @include custom-scroll;
+  li {
+    color: #858585;
+    cursor: pointer;
+    padding: 7.5px 15px;
+    &.selectable:hover {
+      background: #dedede;
+    }
+  }
+}
+
+.form-dropdown__selected-options {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.form-dropdown__selected-options__option {
+  display: flex;
+  color: #858585;
+  font-size: 16px;
+  margin-bottom: 10px;
+  align-items: center;
+  justify-content: space-between;
+  .react-toggle {
+    margin-right: 5px;
+  }
+  .lbl {
+    display: flex;
+    align-items: center;
+  }
+  .btn {
+    border: none;
+    background: none;
+  }
+  .material-icons {
+    cursor: pointer;
+  }
+}
+
+.form__input-row > div:nth-child(2) {
+  flex-basis: 60%;
+  flex-shrink: 0;
+}
+
+$base-class: ".form";
+
+.form {
+  &__section {
+    padding: 40px;
+    border-bottom: 1px solid #ECECEC;
+  }
+  &__header {
+    font-size: 24px;
+    font-weight: normal;
+    margin: 0;
+  }
+  &__sub-header {
+    font-size: 20px;
+    font-weight: normal;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  &__subsection-divider {
+    height: 1px;
+    background-color: #ececec;
+    margin: 20px 0;
+  }
+  &__input-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    @media (max-width: 450px) {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    &+& {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+  &__label {
+    font-size: 16px;
+    flex-basis: 40%;
+    align-self: flex-start;
+    margin-top: 13px; //Magic number to vert center align labels with center of dropdown. Needed to allow labels to stay at top with flex-start when multi-select is active
+    @media (max-width: 450px) {
+      padding-bottom: 15px;
+    }
+    &__info {
+      padding-left: 5px;
+    }
+  }
+  .form-dropdown {
+    flex-basis: 60%;
+    flex-shrink: 0;
+    &__selected-options:not(:empty) {
+      margin-top: 8px; //Magic number to vert center align selections with label
+    }
+  }
+  &__submit-button-row {
+    display: flex;
+  }
+  &__submit-button {
+    flex-basis: 200px;
+    margin-left: 40%;
+    @media (max-width: 450px) {
+      flex-basis: 100%;
+      margin-left: 0;
+    }
+  }
+  &__info-row {
+    display: flex;
+    justify-content: flex-end;
+    &+#{$base-class}__input-row {
+      padding-top: 10px;
+    }
+  }
+  &__info {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+  }
+  &__info-icon {
+    font-size: 20px;
+    padding-left: 5px;
+  }
+
+  .react-datepicker-wrapper input:not(.form__text-field) {
+    background: #FFF;
+    border: 1px solid #DDDDDD;
+    color: #858585;
+    cursor: pointer;
+    padding: 0 15px;
+    line-height: 43px;
+    position: relative;
+    width: 100%;
+  }
+
+  .react-datepicker-wrapper, .react-datepicker__input-container {
+    width: 100%;
+  }
+
+  .react-datepicker__input-container {
+    .material-icons {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      pointer-events: none;
+      padding-right: 10px;
+    }
+  }
+
+  .react-toggle-track {
+    height: 32px;
+    width: 80px;
+    background-color: #E5E5E5;
+  }
+
+  .react-toggle-thumb {
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 32px;
+    border: none;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+  }
+
+  .react-toggle--checked .react-toggle-thumb {
+    left: initial;
+    right: 0;
+  }
+
+  .react-toggle-track-x, .react-toggle-track-check {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .react-toggle-track-x {
+    padding-right: 20px;
+    justify-content: flex-end;
+    right: initial;
+  }
+
+  .react-toggle-track-check {
+    justify-content: flex-start;
+    padding-left: 15px;
+    left: initial;
+    color: white;
+  }
+
+  .react-toggle:hover:not(.react-toggle--disabled) .react-toggle-track {
+    background-color: darken(#E5E5E5, 20);
+  }
+
+  &__input-row--error {
+    input, .form-dropdown__hd {
+      border: 1px solid red;
+    }
+  }
+
+  &__error {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 14px;
+    color: red;
+  }
+
+  &__creation-status {
+    position: absolute;
+    bottom: 30px;
+    right: 40px;
+  }
+}
+
+.program-editor {
+  .progress-circular-container {
+    position: absolute;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .25);
+    margin: 0;
+    padding-top: 25%;
+    z-index: 9;
+  }
+}
+
+.form--program-edit {
+  position: relative;
+
+  .form__input-row {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  &__inputs {
+    padding-bottom: 70px;
+    .form__input-row:nth-child(1) {
+      padding-top: 0;
+    }
+  }
+  .form__submit-button-row {
+    padding-top: 30px;
+  }
+  .form__input-row--disabled {
+    .form-dropdown, .react-datepicker__input-container input {
+      pointer-events: none;
+    }
+    .form-dropdown__hd, .form__text-field, .react-datepicker__input-container input {
+      border: none;
+    }
+    .material-icons {
+      display: none;
+    }
+  }
+
+  .form__header {
+    display: flex;
+    align-items: center;
+    a {
+      display: flex;
+      text-decoration: none;
+      color: black;
+      margin-right: 10px;
+    }
+    .material-icons {
+      font-size: 32px;
+    }
+  }
+
+  .react-datepicker--time-only .react-datepicker__time-box {
+    border-radius: 0;
+  }
+  // Ridiculous selectors to get specificity needed to override defaults
+  .react-datepicker__time-container,
+  .react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box {
+    width: 100px;
+  }
+  .react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item {
+    padding: 10px 10px;
+  }
+  .react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle,
+  .react-datepicker-popper[data-placement^="top"] .react-datepicker__triangle {
+    margin-left: 6px;
+  }
+
+  .react-datepicker-wrapper .react-datepicker__input-container:focus-within .react-datepicker__close-icon {
+    display: flex;
+  }
+
+  button.react-datepicker__close-icon {
+    display: none;
+    left: 30%;
+    top: 15px;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    &:after {
+      margin: initial;
+      padding: 1px;
+      position: initial;
+    }
+  }
+
+  .form-dropdown__selected-options {
+    padding-left: 15px;
+  }
+
+}
+
+.episode-edit {
+  z-index: 1;
+  bottom: 55px;
+  min-width: 630px;
+  position: absolute;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+  .layout-content-single-well__content {
+    margin: 0;
+  }
+}
+
+.content-editable {
+  display: inline-block;
+  white-space: pre-wrap;
+}
