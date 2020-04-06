@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<content-type>/component/channel</content-type>	<display-template/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>0123</objectGroupId>
+	<objectId>012378fd-678e-bf6d-ea8a-eb978b757fce</objectId>
+	<file-name>012378fd-678e-bf6d-ea8a-eb978b757fce.xml</file-name>
+	<internal-name>Telemundo</internal-name>
+	<title>Telemundo</title>
+	<bitrate>835000</bitrate>
+	<url>https://547f72e6652371c3.mediapackage.us-east-1.amazonaws.com/out/v1/c62eb38c2e4b4bcf87fc7514bc85a75c/index.m3u8</url>
+	<streamType>hls</streamType>
+	<language_s>spa</language_s>
+	<country_s>us</country_s>
+	<thumbnail>/static-assets/images/channels/012378fd-678e-bf6d-ea8a-eb978b757fce/Telemundo.png</thumbnail>
+	<description>&lt;p&gt;Telemundo (Spanish pronunciation: [teleˈmundo]) is an American Spanish-language terrestrial television network owned by Comcast through the NBCUniversal division NBCUniversal Telemundo Enterprises. It is the second largest provider of Spanish-language content nationwide behind American competitor Univision, with programming syndicated worldwide to more than 100 countries in over 35 languages.&lt;/p&gt;</description>
+	<createdDate>2018-06-26T15:49:26.587Z</createdDate>
+	<createdDate_dt>2018-06-26T15:49:26.587Z</createdDate_dt>
+	<lastModifiedDate>2018-08-08T20:36:25.672Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-08-08T20:36:25.672Z</lastModifiedDate_dt>
+	<audioOnly>false</audioOnly>
+	<offline>false</offline>
+	<hidden>false</hidden>
+	<lowBitrate>100000</lowBitrate>
+	<encodingProfile>project-a-clip-2</encodingProfile>
+</component>
