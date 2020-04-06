@@ -1,0 +1,134 @@
+@import "../settings";
+
+body {
+  background: #FFF;
+  font-size: 16px;
+  line-height: 1.2;
+  font-family: 'Barlow', sans-serif;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+a {
+  &.on-light-bg {
+    color: lighten(#000, 20%);
+    text-decoration: underline;
+    &:hover {
+      color: #000;
+      text-decoration: none;
+    }
+    &:active {
+      color: darken(#000, 40%);
+      text-decoration: none;
+    }
+  }
+  &.on-dark-bg {
+    color: darken(#FFFFFF, 15%);
+    text-decoration: underline;
+    &:hover {
+      color: #FFFFFF;
+    }
+    &:active {
+      color: darken(#FFFFFF, 30%);
+    }
+  }
+}
+
+input {
+  font-family: 'Barlow', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+input, textarea, select, button {
+  font-size: 1em;
+}
+
+// prevent vue app flickering before loading
+[v-cloak] {
+  display: none;
+}
+
+.error-page {
+  padding: 20px;
+}
+
+.has-active-modal {
+  overflow: hidden;
+}
+
+[data-live-max] {
+  margin: 0 auto;
+  max-width: 720px;
+}
+
+.text-centered {
+  text-align: center;
+}
+
+.text-muted {
+  color: $color-muted;
+}
+
+.hidden-sm {
+  @media (max-width: 499px) {
+    display: none;
+  }
+}
+
+.flex {
+  display: flex;
+  &.center {
+    align-items: center;
+  }
+  &.wrap {
+    flex-wrap: wrap;
+  }
+  &.justify-center {
+    justify-content: center;
+  }
+  &.grow {
+    flex-grow: 1;
+  }
+}
+
+.display-block {
+  display: block;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.font-weight-regular {
+  @include text-weight-regular;
+}
+
+.hover-underline {
+  &:hover {
+    text-decoration: underline;
+  }
+}
