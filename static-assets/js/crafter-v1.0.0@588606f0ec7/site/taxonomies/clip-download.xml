@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<content-type>/component/taxonomy</content-type>	<display-template/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>2266</objectGroupId>
+	<objectId>2266accd-0ccb-01d1-856f-b11389b2d3fb</objectId>
+	<items>	<item>	<key>highres</key>
+	<value>High Resolution</value>
+	</item>	<item>	<key>lowres</key>
+	<value>Low Resolution</value>
+	</item>	<item>	<key>audio</key>
+	<value>Audio Only</value>
+	</item>	<item>	<key>metadata</key>
+	<value>Metadata Only</value>
+	</item></items>
+	<file-name>clip-download.xml</file-name>
+	<folder-name/>
+	<internal-name>Clip Download</internal-name>
+	<createdDate>2018-08-08T17:47:10.850Z</createdDate>
+	<createdDate_dt>2018-08-08T17:47:10.850Z</createdDate_dt>
+	<lastModifiedDate>2018-08-08T17:47:10.850Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-08-08T17:47:10.850Z</lastModifiedDate_dt>
+</component>
