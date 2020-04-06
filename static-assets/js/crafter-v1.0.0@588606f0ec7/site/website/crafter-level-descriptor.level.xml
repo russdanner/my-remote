@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ - Copyright (C) 2007-2018 Crafter Software Corporation. All Rights Reserved.
+ -
+ - This program is licensed under the Crafter Enterprise Software License Agreement,
+ - and its use is strictly limited to operation with Crafter CMS Enterprise Edition.
+ - Unauthorized use, distribution, or modification is strictly prohibited.
+-->
+
+<component>
+	<content-type>/component/level-descriptor</content-type>	<display-template/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>d418</objectGroupId>
+	<objectId>d418b4c7-bf31-ea7c-337f-f6e121cb1923</objectId>
+	<file-name>crafter-level-descriptor.level.xml</file-name>
+	<folder-name/>
+	<createdDate>2017-8-25T20:37:50.000Z</createdDate>
+	<createdDate_dt>2017-8-25T20:37:50.000Z</createdDate_dt>
+	<lastModifiedDate>2018-02-19T21:06:21.613Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-02-19T21:06:21.613Z</lastModifiedDate_dt>
+	<trackingId>UA-108108926-1</trackingId>
+</component>
