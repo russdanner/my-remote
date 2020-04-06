@@ -1,0 +1,58 @@
+@import "../styles/scss-utils";
+
+.filters__title {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include text-weight-medium;
+}
+
+.filters__item {
+  margin-top: 20px;
+  &.border {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+  }
+}
+
+.filters__item__toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  + .filters__item__toggle {
+    margin-top: 10px;
+  }
+  .react-toggle {
+
+  }
+}
+
+.filters__item-label {
+  color: #444444;
+  display: block;
+  font-size: 20px;
+  margin: 0 0 5px 0;
+}
+
+.filters__item-input-search {
+  position: relative;
+  i.material-icons {
+    color: #858585;
+    left: 8px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    & + input {
+      padding-left: 40px;
+    }
+  }
+}
+
+.filters__buttons {
+  display: flex;
+  padding: 0 10px;
+  align-items: center;
+}
