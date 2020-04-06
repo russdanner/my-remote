@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ - Copyright (C) 2007-2018 Crafter Software Corporation. All Rights Reserved.
+ -
+ - This program is licensed under the Crafter Enterprise Software License Agreement,
+ - and its use is strictly limited to operation with Crafter CMS Enterprise Edition.
+ - Unauthorized use, distribution, or modification is strictly prohibited.
+-->
+
+<component>
+	<content-type>/component/taxonomy</content-type>	<display-template/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>b17f</objectGroupId>
+	<objectId>b17f05ef-b55c-f39e-106e-1c32673e9afb</objectId>
+	<items>
+<item><key>abk</key><value>Abkhazian</value></item>
+<item><key>afr</key><value>Afrikaans</value></item>
+<item><key>sqi</key><value>Albanian</value></item>
+<item><key>amh</key><value>Amharic</value></item>
+<item><key>ara</key><value>Arabic</value></item>
+<item><key>hye</key><value>Armenian</value></item>
+<item><key>asm</key><value>Assamese</value></item>
+<item><key>aze</key><value>Azerbaijani</value></item>
+<item><key>bal</key><value>Baluchi</value></item>
+<item><key>bam</key><value>Bambara</value></item>
+<item><key>bel</key><value>Belarusian</value></item>
+<item><key>ben</key><value>Bengali</value></item>
+<item><key>jbe</key><value>Berber</value></item>
+<item><key>bis</key><value>Bislama</value></item>
+<item><key>bos</key><value>Bosnian</value></item>
+<item><key>brh</key><value>Brahui</value></item>
+<item><key>bul</key><value>Bulgarian</value></item>
+<item><key>mya</key><value>Burmese</value></item>
+<item><key>kxm</key><value>Cambodian</value></item>
+<item><key>wes</key><value>Cameroon Pidgin</value></item>
+<item><key>cat</key><value>Catalan</value></item>
+<item><key>ceb</key><value>Cebuano</value></item>
+<item><key>cbk</key><value>Chavacano</value></item>
+<item><key>che</key><value>Chechen</value></item>
+<item><key>zho</key><value>Chinese</value></item>
+<item><key>mul</key><value>Creole</value></item>
+<item><key>crh</key><value>Crimean Tatar</value></item>
+<item><key>hrv</key><value>Croatian</value></item>
+<item><key>ces</key><value>Czech</value></item>
+<item><key>dan</key><value>Danish</value></item>
+<item><key>prs</key><value>Dari</value></item>
+<item><key>div</key><value>Dhivehi</value></item>
+<item><key>nld</key><value>Dutch/Flemish</value></item>
+<item><key>dzo</key><value>Dzongkha</value></item>
+<item><key>eng</key><value>English</value></item>
+<item><key>est</key><value>Estonian</value></item>
+<item><key>ewe</key><value>Ewe</value></item>
+<item><key>fij</key><value>Fijian</value></item>
+<item><key>fin</key><value>Finnish</value></item>
+<item><key>fra</key><value>French</value></item>
+<item><key>ful</key><value>Fulah</value></item>
+<item><key>lug</key><value>Ganda</value></item>
+<item><key>grt</key><value>Garo</value></item>
+<item><key>kat</key><value>Georgian</value></item>
+<item><key>deu</key><value>German</value></item>
+<item><key>ell</key><value>Greek</value></item>
+<item><key>guj</key><value>Gujarati</value></item>
+<item><key>hau</key><value>Hausa</value></item>
+<item><key>heb</key><value>Hebrew</value></item>
+<item><key>hin</key><value>Hindi</value></item>
+<item><key>hun</key><value>Hungarian</value></item>
+<item><key>isl</key><value>Icelandic</value></item>
+<item><key>ibo</key><value>Igbo</value></item>
+<item><key>ind</key><value>Indonesian</value></item>
+<item><key>ita</key><value>Italian</value></item>
+<item><key>jpn</key><value>Japanese</value></item>
+<item><key>kck</key><value>Kalanga</value></item>
+<item><key>kln</key><value>Kalenjin</value></item>
+<item><key>kan</key><value>Kannada</value></item>
+<item><key>kau</key><value>Kanuri</value></item>
+<item><key>kas</key><value>Kashmiri</value></item>
+<item><key>kaz</key><value>Kazakh</value></item>
+<item><key>kha</key><value>Khasi</value></item>
+<item><key>kik</key><value>Kikuyu</value></item>
+<item><key>kin</key><value>Kinyarwanda</value></item>
+<item><key>kor</key><value>Korean</value></item>
+<item><key>kri</key><value>Krio</value></item>
+<item><key>kua</key><value>Kuanyama</value></item>
+<item><key>kur</key><value>Kurdish</value></item>
+<item><key>kir</key><value>Kyrgyz</value></item>
+<item><key>lao</key><value>Lao</value></item>
+<item><key>lav</key><value>Latvian</value></item>
+<item><key>lin</key><value>Lingala</value></item>
+<item><key>lit</key><value>Lithuanian</value></item>
+<item><key>luo</key><value>Luo</value></item>
+<item><key>lus</key><value>Lushai</value></item>
+<item><key>mkd</key><value>Macedonian</value></item>
+<item><key>mad</key><value>Madurese</value></item>
+<item><key>mdh</key><value>Maguindanaon</value></item>
+<item><key>mlg</key><value>Malagasy</value></item>
+<item><key>msa</key><value>Malay</value></item>
+<item><key>mal</key><value>Malayalam</value></item>
+<item><key>mlt</key><value>Maltese</value></item>
+<item><key>mnk</key><value>Mandinka</value></item>
+<item><key>mni</key><value>Manipuri</value></item>
+<item><key>mrw</key><value>Maranao</value></item>
+<item><key>mar</key><value>Marathi</value></item>
+<item><key>mah</key><value>Marshallese</value></item>
+<item><key>mon</key><value>Mongolian</value></item>
+<item><key>mos</key><value>Mossi</value></item>
+<item><key>nde</key><value>Ndebele</value></item>
+<item><key>nep</key><value>Nepali</value></item>
+<item><key>pcm</key><value>Nigerian Pidgin</value></item>
+<item><key>nog</key><value>Nogai</value></item>
+<item><key>tts</key><value>Northeastern Thai</value></item>
+<item><key>nod</key><value>Northern Thai</value></item>
+<item><key>nor</key><value>Norwegian</value></item>
+<item><key>ori</key><value>Oriya</value></item>
+<item><key>orm</key><value>Oromo</value></item>
+<item><key>pus</key><value>Pashto</value></item>
+<item><key>fas</key><value>Persian</value></item>
+<item><key>pol</key><value>Polish</value></item>
+<item><key>por</key><value>Portuguese</value></item>
+<item><key>pan</key><value>Punjabi</value></item>
+<item><key>ron</key><value>Romanian</value></item>
+<item><key>run</key><value>Rundi</value></item>
+<item><key>rus</key><value>Russian</value></item>
+<item><key>smo</key><value>Samoan</value></item>
+<item><key>sag</key><value>Sango</value></item>
+<item><key>srp</key><value>Serbian</value></item>
+<item><key>sna</key><value>Shona</value></item>
+<item><key>snd</key><value>Sindhi</value></item>
+<item><key>sin</key><value>Sinhalese</value></item>
+<item><key>ssw</key><value>Siswati</value></item>
+<item><key>slk</key><value>Slovak</value></item>
+<item><key>slv</key><value>Slovenian</value></item>
+<item><key>som</key><value>Somali</value></item>
+<item><key>ses</key><value>Songhai</value></item>
+<item><key>sot</key><value>Southern Sotho</value></item>
+<item><key>spa</key><value>Spanish</value></item>
+<item><key>sus</key><value>Susu</value></item>
+<item><key>swa</key><value>Swahili</value></item>
+<item><key>swe</key><value>Swedish</value></item>
+<item><key>tgl</key><value>Tagalog</value></item>
+<item><key>tgk</key><value>Tajik</value></item>
+<item><key>taq</key><value>Tamasheq</value></item>
+<item><key>tam</key><value>Tamil</value></item>
+<item><key>tat</key><value>Tatar</value></item>
+<item><key>tsg</key><value>Tausug</value></item>
+<item><key>tel</key><value>Telugu</value></item>
+<item><key>tet</key><value>Tetum</value></item>
+<item><key>tha</key><value>Thai</value></item>
+<item><key>bod</key><value>Tibetan</value></item>
+<item><key>tir</key><value>Tigrinya</value></item>
+<item><key>tsn</key><value>Tswana</value></item>
+<item><key>tur</key><value>Turkish</value></item>
+<item><key>tuk</key><value>Turkmen</value></item>
+<item><key>uig</key><value>Uighur</value></item>
+<item><key>ukr</key><value>Ukrainian</value></item>
+<item><key>urd</key><value>Urdu</value></item>
+<item><key>uzb</key><value>Uzbek</value></item>
+<item><key>vie</key><value>Vietnamese</value></item>
+<item><key>wln</key><value>Walloon</value></item>
+<item><key>wol</key><value>Wolof</value></item>
+<item><key>xho</key><value>Xhosa</value></item>
+<item><key>yor</key><value>Yoruba</value></item>
+<item><key>dje</key><value>Zarma</value></item>
+<item><key>zul</key><value>Zulu</value></item>
+	</items>
+	<file-name>languages.xml</file-name>
+	<folder-name/>
+	<internal-name>Languages</internal-name>
+	<createdDate>2018-02-16T19:44:42.524Z</createdDate>
+	<createdDate_dt>2018-02-16T19:44:42.524Z</createdDate_dt>
+	<lastModifiedDate>2018-02-19T14:59:19.013Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-02-19T14:59:19.013Z</lastModifiedDate_dt>
+</component>
