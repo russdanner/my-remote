@@ -1,0 +1,348 @@
+@import "../settings";
+
+.app-player {
+  text-align: center;
+  background: #000000;
+}
+
+.app-player-container {
+  height: 60vh;
+}
+
+.player-background-wrapper {
+  background-color: #F0F0F0;
+}
+
+.player-wrapper {
+  position: relative;
+}
+
+.player-wrapper__progress {
+  background: rgba(255, 255, 255, .8);
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  .progress-circular-container {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/// CONTROLS BAR
+.app-controls-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+  margin: 15px 0;
+  flex-flow: wrap;
+}
+
+// BUTTONS
+.control-button {
+  background: #444444;
+  border: none;
+  border-radius: 2px;
+  color: #FFF;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 0;
+  padding: 5px 10px;
+  min-width: 60px;
+  transition: .6s opacity;
+  vertical-align: top;
+  text-decoration: none;
+  &:hover {
+    opacity: .7;
+  }
+  &.disabled {
+    color: darken(#FFF, 50%);
+    &:hover {
+      opacity: initial;
+      cursor: initial;
+    }
+  }
+}
+
+.app-player .playback-speed-button {
+  line-height: 1;
+  font-size: 16px;
+  padding: 9px 10px;
+}
+
+.control-button-group {
+  display: flex;
+  margin-right: 30px;
+  margin-bottom: 5px;
+  position: relative;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.control-button {
+  margin-right: 10px;
+  &.last,
+  &.solo,
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.control-button--overlay-control {
+  position: relative;
+  &:hover {
+    .control-button__overlay-control {
+      display: flex;
+    }
+  }
+}
+
+.control-button__overlay-control {
+  position: absolute;
+  width: 60px;
+  justify-content: center;
+  background-clip: padding-box;
+  border-bottom: 5px solid transparent;
+  z-index: 9;
+  display: none;
+  bottom: 35px;
+}
+
+.control-button__slider-control {
+  width: 60px;
+  top: -125px;
+}
+
+.control-button__list-selector {
+  list-style-type: none;
+  flex-direction: column;
+  width: 50px;
+  background-color: #444;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0;
+  margin: 0;
+  left: 5px;
+}
+
+.control-button__list-item {
+  a {
+    padding: 2px 0;
+    display: block;
+    font-size: .9em;
+  }
+}
+
+.control-button__list-link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  &--selected {
+    color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+.rc-slider-vertical {
+  height: 100px;
+  .rc-slider-rail {
+    background-color: #666;
+  }
+  .rc-slider-step {
+    cursor: grab;
+    cursor: -webkit-grab;
+  }
+  .rc-slider-track {
+    background-color: $color-primary-light;
+  }
+  .rc-slider-handle {
+    color: $color-primary-light;
+    border-color: $color-primary-light;
+    background-color: $color-primary-light;
+  }
+}
+
+.volume-slider-style-wrap {
+  width: 30px;
+  background-color: #444;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.record-button {
+  padding: 0;
+  position: relative;
+
+  &.recording {
+    opacity: 1;
+    background: #fff;
+    i {
+      color: red;
+    }
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+
+}
+
+// PLAY POSITION CONTROL
+.app-player .playback-position-control {
+  display: flex;
+
+  &__time,
+  &__date-input {
+    color: #FFF;
+    height: 35px;
+    display: flex;
+    padding: 0 10px;
+    align-items: center;
+    border-radius: 2px;
+    background-color: #444;
+  }
+
+  &__date {
+    margin-right: 10px;
+    > div {
+      display: inline;
+    }
+  }
+
+  &__date-input {
+    width: 95px;
+  }
+
+  &__time.error {
+    color: darken($red, 30%);
+    border: 1px solid $red;
+    background-color: $light-red;
+  }
+
+  &__time,
+  .button--dark {
+    width: 100px;
+    font-family: Monospaced, monospace;
+  }
+
+  input {
+    margin: 0;
+    color: #FFF;
+    border: none;
+    font-size: 1em;
+    min-height: 30px;
+    text-align: center;
+  }
+
+  .react-datepicker-popper {
+    width: 320px;
+  }
+
+  //.react-datepicker__input-container input {
+  //  max-width: 62px;
+  //  min-width: 62px;
+  //  margin: 0 5px;
+  //}
+
+}
+
+// SEEKER ZOOM
+.app-player .app-seeker-zoom {
+  .rc-slider-track {
+    background-color: $color-primary;
+  }
+  .rc-slider-mark {
+  }
+  .rc-slider-mark-text strong {
+  }
+  .rc-slider-dot {
+    border: none;
+    background: #000;
+    &.rc-slider-dot-active {
+      background: $color-primary;
+    }
+  }
+  .rc-slider-handle {
+    border: none;
+    background: $color-primary;
+  }
+  .rc-slider-rail {
+    background: rgba(102, 102, 102, 0.3);
+  }
+}
+
+// CLIP player styles
+.app-player__clip {
+  background: none; // tweaking or hiding elements of videojs
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  .vjs-play-control,
+  .vjs-volume-panel,
+  .vjs-remaining-time,
+  .vjs-playback-rate,
+  .vjs-fullscreen-control,
+  .vjs-big-play-button,
+  .vjs-live-control {
+    display: none;
+  }
+  .vjs-control-bar {
+    background: none;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+  .vjs-progress-control {
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+  }
+  .vjs-play-progress {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+  .vjs-progress-holder {
+    height: 15px;
+  }
+  .vjs-progress-holder,
+  .vjs-load-progress {
+    border-radius: 8px;
+  }
+  .vjs-play-progress {
+    &:before {
+      font-size: 20px;
+      top: -2px;
+    }
+  }
+  .app-controls-bar {
+    padding: 20px 0 0 0;
+  }
+}
+
+.app-player .control-download-button {
+  font-size: 16px;
+  font-weight: 200;
+  padding: 17px 10px 17px 30px;
+  position: relative;
+  i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5px;
+  }
+}
+
+.app-player-error {
+  padding: 15px 20px;
+  text-align: center;
+  color: #FFF;
+  background: $light-red;
+}
