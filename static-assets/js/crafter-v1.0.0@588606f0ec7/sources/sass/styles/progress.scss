@@ -1,0 +1,155 @@
+
+@import "../settings";
+
+/*
+Circular Progress: spinner based on http://materializecss.com/preloader.html#circular
+*/
+
+$progress-circular-color: $color-primary;
+
+.progress-circular-container {
+    clear: both;
+    text-align: center;
+    margin: 10px auto;
+    width: 100%;
+}
+.progress-circular {
+    animation: container-rotate 1568ms linear infinite;
+    display: inline-block;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    @include element('spinner-layer') {
+        animation: fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-color: $progress-circular-color;
+    }
+    @include element('circle') {
+        width: 200%;
+        height: 100%;
+        border-width: 3px;
+        border-style: solid;
+        border-color: inherit;
+        border-bottom-color: transparent !important;
+        border-radius: 50%;
+        -webkit-animation: none;
+        animation: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0
+    }
+    @include element('gap-patch') {
+        position: absolute;
+        top: 0;
+        left: 45%;
+        width: 10%;
+        height: 100%;
+        overflow: hidden;
+        border-color: inherit;
+        .progress-circular__circle {
+            width: 1000%;
+            left: -450%
+        }
+    }
+    @include element('circle-clipper') {
+        display: inline-block;
+        position: relative;
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+        border-color: inherit;
+        @include modifier('left') {
+            float: left;
+            .progress-circular__circle {
+                animation: left-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
+                left: 0;
+                border-right-color: transparent !important;
+                transform: rotate(129deg)
+            }
+        }
+        @include modifier('right') {
+            float: right;
+            .progress-circular__circle {
+                animation: right-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
+                left: -100%;
+                border-left-color: transparent !important;
+                transform: rotate(-129deg)
+            }
+        }
+    }
+    @keyframes container-rotate {
+        to {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg)
+        }
+    }
+    @keyframes fill-unfill-rotate {
+        12.5% {
+            transform: rotate(135deg)
+        }
+        25% {
+            transform: rotate(270deg)
+        }
+        37.5% {
+            transform: rotate(405deg)
+        }
+        50% {
+            transform: rotate(540deg)
+        }
+        62.5% {
+            transform: rotate(675deg)
+        }
+        75% {
+            transform: rotate(810deg)
+        }
+        87.5% {
+            transform: rotate(945deg)
+        }
+        to {
+            transform: rotate(1080deg)
+        }
+    }
+    @keyframes left-spin {
+        from {
+            transform: rotate(130deg)
+        }
+        50% {
+            transform: rotate(-5deg)
+        }
+        to {
+            transform: rotate(130deg)
+        }
+    }
+    @keyframes right-spin {
+        from {
+            transform: rotate(-130deg)
+        }
+        50% {
+            transform: rotate(5deg)
+        }
+        to {
+            transform: rotate(-130deg)
+        }
+    }
+}
+
+.l-progress-overlay {
+    background: #FFF;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    @include modifier('transparent') {
+        background: rgba(255, 255, 255, .7);
+    }
+    @include element('inner') {
+        left: 50%;
+        position: fixed;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
