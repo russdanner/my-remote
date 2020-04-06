@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/static-assets/css/video-js.css">
+    <script src="/static-assets/js/video.js"></script>
+    <style type="text/css">
+        body {
+            padding-top: 30px;
+            padding-left: 20px;
+        }
+        div {
+            padding-bottom: 20px;
+        }
+        input {
+            margin-left: 5px;
+        }
+        .hidden {
+            display: none;
+        }
+        .message {
+            font-weight: bold;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <div>
+        HLS URL: <input id='source' size='100' type='text'/><input id='button' type='button' value='Load / Reload'/>
+        <br/>
+        Samples: <select id='samples'><option>Select a Value</option></select>
+        <span id='message' class='hidden'>
+            <br/>Loading stream <span id='stream'></span>...
+        </span>
+    </div>
+
+    <div>
+        <video id="player" class="video-js hidden" controls preload="auto" width="725" height="400">
+        </video>
+    </div>
+
+    <script type="text/javascript">
+        // load video
+        $('#button').click(function() {
+            stream = $('#source').val();
+            if(!stream) {
+                return;
+            }
+            showMessage(stream);
+            videojs.log.level('debug')
+            player = videojs(document.getElementById('player'));
+            player.src({ src: stream, type: 'application/x-mpegURL' });
+            $('#player').removeClass('hidden');
+            player.play();
+        });
+        $( "#source").keypress(function(e) {
+            if (e.which == 13) {
+                $('#button').click();
+            }
+        });
+        function showMessage(stream) {
+            console.log("Setting stream: " + stream);
+            $('#stream').text(stream);
+            $('#message').removeClass('hidden');
+            setTimeout(function() {
+                $('#message').addClass('hidden');
+            }, 1000);
+        }
+
+        // load samples
+        $.each([
+            {
+                Name: 'Al Jazeera English (IP Whitelist)',
+                Url: 'https://4l9z9a9mab.execute-api.us-east-2.amazonaws.com/api/AlJazeeraEnglishHD-WAF'
+            },
+            {
+                Name: 'Al Jazeera English (Signed Cookies)',
+                Url: 'https://4l9z9a9mab.execute-api.us-east-2.amazonaws.com/api/AlJazeeraEnglishHD'
+            },
+            {
+                Name: 'CCTV-13 (IP Whitelist)',
+                Url: 'https://4l9z9a9mab.execute-api.us-east-2.amazonaws.com/api/CCTVXinwen-WAF'
+            },
+            {
+                Name: 'CCTV-13 (Signed Cookies)',
+                Url: 'https://4l9z9a9mab.execute-api.us-east-2.amazonaws.com/api/CCTVXinwen'
+            },
+            {
+                Name: 'Parade (Public)',
+                Url: 'https://d1znu9hcihiapf.cloudfront.net/index.m3u8'
+            },
+            {
+                Name: 'Big Buck Bunny (Public)',
+                Url: 'https://547f72e6652371c3.mediapackage.us-east-1.amazonaws.com/out/v1/50004c1ff70c42d886771697f0b79285/index.m3u8'
+            }
+        ], function(k, v) {
+            $('#samples').append($('<option></option>').val(v.Url).text(v.Name));
+        });
+        $('#samples').change(function() {
+            $('#source').val($(this).val());
+            $('#button').click();
+        })
+    </script>
+</body>
+</html>
