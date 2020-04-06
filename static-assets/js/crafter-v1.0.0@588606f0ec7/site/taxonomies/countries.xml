@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ - Copyright (C) 2007-2018 Crafter Software Corporation. All Rights Reserved.
+ -
+ - This program is licensed under the Crafter Enterprise Software License Agreement,
+ - and its use is strictly limited to operation with Crafter CMS Enterprise Edition.
+ - Unauthorized use, distribution, or modification is strictly prohibited.
+-->
+
+<component>
+	<content-type>/component/taxonomy</content-type>   <display-template/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>e131</objectGroupId>
+	<objectId>e1313d10-529f-3a2e-bf83-be421277a442</objectId>
+	<items>
+<item><key>af</key><value>Afghanistan</value></item>
+<item><key>al</key><value>Albania</value></item>
+<item><key>dz</key><value>Algeria</value></item>
+<item><key>as</key><value>American Samoa</value></item>
+<item><key>ad</key><value>Andorra</value></item>
+<item><key>ao</key><value>Angola</value></item>
+<item><key>ai</key><value>Anguilla</value></item>
+<item><key>aq</key><value>Antarctica</value></item>
+<item><key>ag</key><value>Antigua and Barbuda</value></item>
+<item><key>ar</key><value>Argentina</value></item>
+<item><key>am</key><value>Armenia</value></item>
+<item><key>aw</key><value>Aruba</value></item>
+<item><key>au</key><value>Australia</value></item>
+<item><key>at</key><value>Austria</value></item>
+<item><key>az</key><value>Azerbaijan</value></item>
+<item><key>bh</key><value>Bahrain</value></item>
+<item><key>bd</key><value>Bangladesh</value></item>
+<item><key>bb</key><value>Barbados</value></item>
+<item><key>by</key><value>Belarus</value></item>
+<item><key>be</key><value>Belgium</value></item>
+<item><key>bz</key><value>Belize</value></item>
+<item><key>bj</key><value>Benin</value></item>
+<item><key>bm</key><value>Bermuda</value></item>
+<item><key>bt</key><value>Bhutan</value></item>
+<item><key>bo</key><value>Bolivia</value></item>
+<item><key>bq</key><value>Bonaire, Sint Eustatius and Saba</value></item>
+<item><key>ba</key><value>Bosnia and Herzegovina</value></item>
+<item><key>bw</key><value>Botswana</value></item>
+<item><key>bv</key><value>Bouvet Island</value></item>
+<item><key>br</key><value>Brazil</value></item>
+<item><key>io</key><value>British Indian Ocean Territory</value></item>
+<item><key>vg</key><value>British Virgin Islands</value></item>
+<item><key>bn</key><value>Brunei</value></item>
+<item><key>bg</key><value>Bulgaria</value></item>
+<item><key>bf</key><value>Burkina Faso</value></item>
+<item><key>mm</key><value>Burma</value></item>
+<item><key>bi</key><value>Burundi</value></item>
+<item><key>cv</key><value>Cabo Verde</value></item>
+<item><key>kh</key><value>Cambodia</value></item>
+<item><key>cm</key><value>Cameroon</value></item>
+<item><key>ca</key><value>Canada</value></item>
+<item><key>ky</key><value>Cayman Islands</value></item>
+<item><key>cf</key><value>Central African Republic</value></item>
+<item><key>td</key><value>Chad</value></item>
+<item><key>cl</key><value>Chile</value></item>
+<item><key>cn</key><value>China</value></item>
+<item><key>cx</key><value>Christmas Island</value></item>
+<item><key>cc</key><value>Cocos (Keeling) Islands</value></item>
+<item><key>co</key><value>Colombia</value></item>
+<item><key>km</key><value>Comoros</value></item>
+<item><key>ck</key><value>Cook Islands</value></item>
+<item><key>cr</key><value>Costa Rica</value></item>
+<item><key>ci</key><value>Cote d'Ivoire</value></item>
+<item><key>hr</key><value>Croatia</value></item>
+<item><key>cu</key><value>Cuba</value></item>
+<item><key>cw</key><value>Curacao</value></item>
+<item><key>cy</key><value>Cyprus</value></item>
+<item><key>cz</key><value>Czech Republic</value></item>
+<item><key>cd</key><value>Democratic Republic of the Congo</value></item>
+<item><key>dk</key><value>Denmark</value></item>
+<item><key>dj</key><value>Djibouti</value></item>
+<item><key>dm</key><value>Dominica</value></item>
+<item><key>do</key><value>Dominican Republic</value></item>
+<item><key>ec</key><value>Ecuador</value></item>
+<item><key>eg</key><value>Egypt</value></item>
+<item><key>sv</key><value>El Salvador</value></item>
+<item><key>gq</key><value>Equatorial Guinea</value></item>
+<item><key>er</key><value>Eritrea</value></item>
+<item><key>ee</key><value>Estonia</value></item>
+<item><key>et</key><value>Ethiopia</value></item>
+<item><key>fk</key><value>Falkland Islands (Islas Malvinas)</value></item>
+<item><key>fo</key><value>Faroe Islands</value></item>
+<item><key>fm</key><value>Federated States of Micronesia</value></item>
+<item><key>fj</key><value>Fiji</value></item>
+<item><key>fi</key><value>Finland</value></item>
+<item><key>fr</key><value>France</value></item>
+<item><key>gf</key><value>French Guiana</value></item>
+<item><key>pf</key><value>French Polynesia</value></item>
+<item><key>tf</key><value>French Southern Territories</value></item>
+<item><key>ga</key><value>Gabon</value></item>
+<item><key>ps</key><value>Gaza Strip/West Bank</value></item>
+<item><key>ge</key><value>Georgia</value></item>
+<item><key>de</key><value>Germany</value></item>
+<item><key>gh</key><value>Ghana</value></item>
+<item><key>gi</key><value>Gibraltar</value></item>
+<item><key>gr</key><value>Greece</value></item>
+<item><key>gl</key><value>Greenland</value></item>
+<item><key>gd</key><value>Grenada</value></item>
+<item><key>gp</key><value>Guadeloupe</value></item>
+<item><key>gu</key><value>Guam</value></item>
+<item><key>gt</key><value>Guatemala</value></item>
+<item><key>gn</key><value>Guinea</value></item>
+<item><key>gw</key><value>Guinea-Bissau</value></item>
+<item><key>gy</key><value>Guyana</value></item>
+<item><key>ht</key><value>Haiti</value></item>
+<item><key>hm</key><value>Heard Island and McDonald Islands</value></item>
+<item><key>hn</key><value>Honduras</value></item>
+<item><key>hk</key><value>Hong Kong</value></item>
+<item><key>hu</key><value>Hungary</value></item>
+<item><key>is</key><value>Iceland</value></item>
+<item><key>in</key><value>India</value></item>
+<item><key>id</key><value>Indonesia</value></item>
+<item><key>ir</key><value>Iran</value></item>
+<item><key>iq</key><value>Iraq</value></item>
+<item><key>ie</key><value>Ireland</value></item>
+<item><key>il</key><value>Israel</value></item>
+<item><key>it</key><value>Italy</value></item>
+<item><key>jm</key><value>Jamaica</value></item>
+<item><key>jp</key><value>Japan</value></item>
+<item><key>jo</key><value>Jordan</value></item>
+<item><key>kz</key><value>Kazakhstan</value></item>
+<item><key>ke</key><value>Kenya</value></item>
+<item><key>ki</key><value>Kiribati</value></item>
+<item><key>xk</key><value>Kosovo</value></item>
+<item><key>kw</key><value>Kuwait</value></item>
+<item><key>kg</key><value>Kyrgyzstan</value></item>
+<item><key>la</key><value>Laos</value></item>
+<item><key>lv</key><value>Latvia</value></item>
+<item><key>lb</key><value>Lebanon</value></item>
+<item><key>ls</key><value>Lesotho</value></item>
+<item><key>lr</key><value>Liberia</value></item>
+<item><key>ly</key><value>Libya</value></item>
+<item><key>li</key><value>Liechtenstein</value></item>
+<item><key>lt</key><value>Lithuania</value></item>
+<item><key>lu</key><value>Luxembourg</value></item>
+<item><key>mo</key><value>Macau</value></item>
+<item><key>mk</key><value>Macedonia</value></item>
+<item><key>mg</key><value>Madagascar</value></item>
+<item><key>mw</key><value>Malawi</value></item>
+<item><key>my</key><value>Malaysia</value></item>
+<item><key>mv</key><value>Maldives</value></item>
+<item><key>ml</key><value>Mali</value></item>
+<item><key>mt</key><value>Malta</value></item>
+<item><key>mh</key><value>Marshall Islands</value></item>
+<item><key>mq</key><value>Martinique</value></item>
+<item><key>mr</key><value>Mauritania</value></item>
+<item><key>mu</key><value>Mauritius</value></item>
+<item><key>yt</key><value>Mayotte</value></item>
+<item><key>mx</key><value>Mexico</value></item>
+<item><key>md</key><value>Moldova</value></item>
+<item><key>mc</key><value>Monaco</value></item>
+<item><key>mn</key><value>Mongolia</value></item>
+<item><key>me</key><value>Montenegro</value></item>
+<item><key>ms</key><value>Montserrat</value></item>
+<item><key>ma</key><value>Morocco</value></item>
+<item><key>mz</key><value>Mozambique</value></item>
+<item><key>na</key><value>Namibia</value></item>
+<item><key>nr</key><value>Nauru</value></item>
+<item><key>np</key><value>Nepal</value></item>
+<item><key>nl</key><value>Netherlands</value></item>
+<item><key>nc</key><value>New Caledonia</value></item>
+<item><key>nz</key><value>New Zealand</value></item>
+<item><key>ni</key><value>Nicaragua</value></item>
+<item><key>ne</key><value>Niger</value></item>
+<item><key>ng</key><value>Nigeria</value></item>
+<item><key>nu</key><value>Niue</value></item>
+<item><key>nf</key><value>Norfolk Island</value></item>
+<item><key>kp</key><value>North Korea</value></item>
+<item><key>mp</key><value>Northern Mariana Islands</value></item>
+<item><key>no</key><value>Norway</value></item>
+<item><key>om</key><value>Oman</value></item>
+<item><key>pk</key><value>Pakistan</value></item>
+<item><key>pw</key><value>Palau</value></item>
+<item><key>pa</key><value>Panama</value></item>
+<item><key>pg</key><value>Papua New Guinea</value></item>
+<item><key>py</key><value>Paraguay</value></item>
+<item><key>pe</key><value>Peru</value></item>
+<item><key>ph</key><value>Philippines</value></item>
+<item><key>pn</key><value>Pitcairn Islands</value></item>
+<item><key>pl</key><value>Poland</value></item>
+<item><key>pt</key><value>Portugal</value></item>
+<item><key>pr</key><value>Puerto Rico</value></item>
+<item><key>qa</key><value>Qatar</value></item>
+<item><key>cg</key><value>Republic of the Congo</value></item>
+<item><key>re</key><value>Reunion</value></item>
+<item><key>ro</key><value>Romania</value></item>
+<item><key>ru</key><value>Russia</value></item>
+<item><key>rw</key><value>Rwanda</value></item>
+<item><key>bl</key><value>Saint Barthelemy</value></item>
+<item><key>sh</key><value>Saint Helena</value></item>
+<item><key>kn</key><value>Saint Kitts and Nevis</value></item>
+<item><key>lc</key><value>Saint Lucia</value></item>
+<item><key>mf</key><value>Saint Martin (French Part)</value></item>
+<item><key>pm</key><value>Saint Pierre and Miquelon</value></item>
+<item><key>vc</key><value>Saint Vincent and the Grenadines</value></item>
+<item><key>ws</key><value>Samoa</value></item>
+<item><key>sm</key><value>San Marino</value></item>
+<item><key>st</key><value>Sao Tome and Principe</value></item>
+<item><key>sa</key><value>Saudi Arabia</value></item>
+<item><key>sn</key><value>Senegal</value></item>
+<item><key>rs</key><value>Serbia</value></item>
+<item><key>sc</key><value>Seychelles</value></item>
+<item><key>sl</key><value>Sierra Leone</value></item>
+<item><key>sg</key><value>Singapore</value></item>
+<item><key>sx</key><value>Sint Maarten</value></item>
+<item><key>sk</key><value>Slovakia</value></item>
+<item><key>si</key><value>Slovenia</value></item>
+<item><key>sb</key><value>Solomon Islands</value></item>
+<item><key>so</key><value>Somalia</value></item>
+<item><key>za</key><value>South Africa</value></item>
+<item><key>gs</key><value>South Georgia and the South Sandwich Islands</value></item>
+<item><key>kr</key><value>South Korea</value></item>
+<item><key>ss</key><value>South Sudan</value></item>
+<item><key>es</key><value>Spain</value></item>
+<item><key>lk</key><value>Sri Lanka</value></item>
+<item><key>sd</key><value>Sudan</value></item>
+<item><key>sr</key><value>Suriname</value></item>
+<item><key>sj</key><value>Svalbard</value></item>
+<item><key>sz</key><value>Swaziland</value></item>
+<item><key>se</key><value>Sweden</value></item>
+<item><key>ch</key><value>Switzerland</value></item>
+<item><key>sy</key><value>Syria</value></item>
+<item><key>tw</key><value>Taiwan</value></item>
+<item><key>tj</key><value>Tajikistan</value></item>
+<item><key>tz</key><value>Tanzania</value></item>
+<item><key>th</key><value>Thailand</value></item>
+<item><key>bs</key><value>The Bahamas</value></item>
+<item><key>gm</key><value>The Gambia</value></item>
+<item><key>tl</key><value>Timor-Leste</value></item>
+<item><key>tg</key><value>Togo</value></item>
+<item><key>tk</key><value>Tokelau</value></item>
+<item><key>to</key><value>Tonga</value></item>
+<item><key>tt</key><value>Trinidad and Tobago</value></item>
+<item><key>tn</key><value>Tunisia</value></item>
+<item><key>tr</key><value>Turkey</value></item>
+<item><key>tm</key><value>Turkmenistan</value></item>
+<item><key>tc</key><value>Turks and Caicos Islands</value></item>
+<item><key>tv</key><value>Tuvalu</value></item>
+<item><key>ug</key><value>Uganda</value></item>
+<item><key>ua</key><value>Ukraine</value></item>
+<item><key>ae</key><value>United Arab Emirates</value></item>
+<item><key>gb</key><value>United Kingdom</value></item>
+<item><key>us</key><value>United States</value></item>
+<item><key>uy</key><value>Uruguay</value></item>
+<item><key>uz</key><value>Uzbekistan</value></item>
+<item><key>vu</key><value>Vanuatu</value></item>
+<item><key>va</key><value>Vatican City</value></item>
+<item><key>ve</key><value>Venezuela</value></item>
+<item><key>vn</key><value>Vietnam</value></item>
+<item><key>vi</key><value>Virgin Islands</value></item>
+<item><key>wf</key><value>Wallis and Futuna</value></item>
+<item><key>eh</key><value>Western Sahara</value></item>
+<item><key>ye</key><value>Yemen</value></item>
+<item><key>zm</key><value>Zambia</value></item>
+<item><key>zw</key><value>Zimbabwe</value></item>
+	</items>
+	<file-name>countries.xml</file-name>
+	<folder-name/>
+	<internal-name>Countries</internal-name>
+	<createdDate>2018-02-16T19:43:29.865Z</createdDate>
+	<createdDate_dt>2018-02-16T19:43:29.865Z</createdDate_dt>
+	<lastModifiedDate>2018-02-22T16:20:26.910Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-02-22T16:20:26.910Z</lastModifiedDate_dt>
+</component>
