@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<content-type>/component/taxonomy</content-type>	<display-template/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>ce39</objectGroupId>
+	<objectId>ce39751c-d4a2-0073-63a4-aa1af98c8317</objectId>
+	<items>	<item>	<key>project-a-admins</key>
+	<value>Admins</value>
+	</item>	<item>	<key>project-a-schedule-admins</key>
+	<value>Schedule Admins</value>
+	</item>	<item>	<key>project-a-users</key>
+	<value>Users</value>
+	</item></items>
+	<file-name>groups.xml</file-name>
+	<folder-name/>
+	<internal-name>Groups</internal-name>
+	<createdDate>2018-07-17T18:31:23.303Z</createdDate>
+	<createdDate_dt>2018-07-17T18:31:23.303Z</createdDate_dt>
+	<lastModifiedDate>2018-07-17T19:27:33.014Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-07-17T19:27:33.014Z</lastModifiedDate_dt>
+</component>
