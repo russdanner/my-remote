@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<content-type>/component/channel</content-type>	<display-template/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>8315</objectGroupId>
+	<objectId>83154372-fd4d-1198-4a2c-1b008516b799</objectId>
+	<file-name>83154372-fd4d-1198-4a2c-1b008516b799.xml</file-name>
+	<internal-name>CCTV-13</internal-name>
+	<title>CCTV-13</title>
+	<bitrate>626000</bitrate>
+	<lowBitrate>200000</lowBitrate>
+	<url>https://4l9z9a9mab.execute-api.us-east-2.amazonaws.com/api/CCTVXinwen</url>
+	<streamType>hls</streamType>
+	<encodingProfile>project-a-clip-2</encodingProfile>
+	<language_s>zho</language_s>
+	<country_s>cn</country_s>
+	<thumbnail>/static-assets/images/channels/83154372-fd4d-1198-4a2c-1b008516b799/CCTV-13.png</thumbnail>
+	<audioOnly>false</audioOnly>
+	<offline>false</offline>
+	<hidden>false</hidden>
+	<description>&lt;p&gt;CCTV-13 (China Central Television News Channel), formerly CCTV News, broadcasting across China since 2003, is the news channel of China Central Television and the biggest news channel on mainland China.&lt;/p&gt;</description>
+	<createdDate>2018-09-14T16:18:48.518Z</createdDate>
+	<createdDate_dt>2018-09-14T16:18:48.518Z</createdDate_dt>
+	<lastModifiedDate>2018-09-14T16:18:48.518Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-09-14T16:18:48.518Z</lastModifiedDate_dt>
+</component>
